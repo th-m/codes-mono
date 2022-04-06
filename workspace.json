@@ -1,4 +1,7 @@
 {
   "version": 2,
-  "projects": {}
+  "projects": {
+    "remix-app": "packages/remix-app",
+    "vite-app": "packages/vite-app"
+  }
 }
