@@ -1,7 +1,6 @@
 {
   "version": 2,
   "projects": {
-    "remix-app": "packages/remix-app",
     "vite-app": "packages/vite-app"
   }
 }

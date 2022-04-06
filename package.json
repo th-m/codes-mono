@@ -23,6 +23,7 @@
     "@nrwl/nx-cloud": "latest",
     "@nrwl/workspace": "13.9.7",
     "@remix-run/dev": "^1.0.6",
+    "@types/estree": "^0.0.47",
     "@types/node": "16.11.7",
     "@types/react": "^17.0.24",
     "@types/react-dom": "^17.0.9",
