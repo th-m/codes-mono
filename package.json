@@ -10,10 +10,12 @@
     "@nrwl/remix": "^13.7.1",
     "@remix-run/react": "^1.0.6",
     "@remix-run/serve": "^1.0.6",
+    "@vitejs/plugin-react": "^1.3.0",
     "@wanews/nx-vite": "^0.7.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "remix": "^1.0.6"
+    "remix": "^1.0.6",
+    "vite": "^2.9.1"
   },
   "devDependencies": {
     "@nrwl/cli": "13.9.7",
