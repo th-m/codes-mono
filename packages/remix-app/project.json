@@ -1,0 +1,6 @@
+{
+  "root": "packages/remix-app",
+  "sourceRoot": "packages/remix-app",
+  "projectType": "application",
+  "tags": []
+}
