@@ -2,6 +2,7 @@
 
 # compiled output
 /dist
+/packages/vite-app/dist
 /tmp
 /out-tsc
 
