@@ -43,3 +43,4 @@ Thumbs.db
 apps/**/build
 apps/**/.cache
   
+.astro
