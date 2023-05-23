@@ -1,0 +1,32 @@
+{
+  "resolvedId": "/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/solid-start/entry-server/index.ts",
+  "transforms": [
+    {
+      "name": "__load__",
+      "result": "export * from \"./render\";\n// server-side only exports\nexport { composeMiddleware, createHandler, default as StartServer } from \"./StartServer\";\nexport type { Middleware, MiddlewareFn, MiddlewareInput } from \"./StartServer\";\n",
+      "start": 1684878593999,
+      "end": 1684878593999
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "export * from \"./render\";\nexport { composeMiddleware, createHandler, default as StartServer } from \"./StartServer\";\n",
+      "start": 1684878593999,
+      "end": 1684878594002,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "result": "export * from \"./render\";\nexport { composeMiddleware, createHandler, default as StartServer } from \"./StartServer\";\n",
+      "start": 1684878594002,
+      "end": 1684878594002,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-analysis",
+      "result": "export * from \"/@fs/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/solid-start/entry-server/render.ts\";\nexport { composeMiddleware, createHandler, default as StartServer } from \"/@fs/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/solid-start/entry-server/StartServer.tsx\";\n",
+      "start": 1684878594002,
+      "end": 1684878594003,
+      "order": "normal"
+    }
+  ]
+}

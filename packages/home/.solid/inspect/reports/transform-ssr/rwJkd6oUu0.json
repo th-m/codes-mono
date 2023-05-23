@@ -1,0 +1,32 @@
+{
+  "resolvedId": "/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/solid-start/root/index.tsx",
+  "transforms": [
+    {
+      "name": "__load__",
+      "result": "// isomorphic exports\n\nexport { Body, Head, Html } from \"./Document\";\nexport { default as Links } from \"./Links\";\nexport { default as Meta } from \"./Meta\";\nexport { default as Scripts } from \"./Scripts\";\n\n",
+      "start": 1684878594326,
+      "end": 1684878594326
+    },
+    {
+      "name": "solid",
+      "result": "// isomorphic exports\n\nexport { Body, Head, Html } from \"./Document\";\nexport { default as Links } from \"./Links\";\nexport { default as Meta } from \"./Meta\";\nexport { default as Scripts } from \"./Scripts\";",
+      "start": 1684878594326,
+      "end": 1684878594327,
+      "order": "pre"
+    },
+    {
+      "name": "vite:define",
+      "result": "// isomorphic exports\n\nexport { Body, Head, Html } from \"./Document\";\nexport { default as Links } from \"./Links\";\nexport { default as Meta } from \"./Meta\";\nexport { default as Scripts } from \"./Scripts\";",
+      "start": 1684878594327,
+      "end": 1684878594327,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-analysis",
+      "result": "// isomorphic exports\n\nexport { Body, Head, Html } from \"/@fs/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/solid-start/root/Document.tsx\";\nexport { default as Links } from \"/@fs/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/solid-start/root/Links.tsx\";\nexport { default as Meta } from \"/@fs/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/solid-start/root/Meta.tsx\";\nexport { default as Scripts } from \"/@fs/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/solid-start/root/Scripts.tsx\";",
+      "start": 1684878594327,
+      "end": 1684878594327,
+      "order": "normal"
+    }
+  ]
+}

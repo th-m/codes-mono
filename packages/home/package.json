@@ -1,5 +1,20 @@
 {
   "name": "home",
   "version": "0.0.1",
-  "description": "Nx Solid home app"
+  "description": "Nx Solid home app",
+  "scripts": {
+    "dev": "solid-start dev",
+    "build": "solid-start build",
+    "start": "solid-start start"
+  },
+  "type": "module",
+
+  "dependencies": {
+
+    "solid-start": "^0.2.21"
+   
+  },
+  "engines": {
+    "node": ">=16"
+  }
 }

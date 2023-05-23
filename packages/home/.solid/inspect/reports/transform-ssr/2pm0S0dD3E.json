@@ -1,0 +1,32 @@
+{
+  "resolvedId": "/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/solid-start/server/data.ts",
+  "transforms": [
+    {
+      "name": "__load__",
+      "result": "import { createRouteAction, createRouteData, createRouteMultiAction } from \"../data\";\nexport { ServerError } from \"../data\";\nexport const createServerData$ = createRouteData;\nexport const createServerAction$ = createRouteAction;\nexport const createServerMultiAction$ = createRouteMultiAction;\n",
+      "start": 1684878594484,
+      "end": 1684878594484
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { createRouteAction, createRouteData, createRouteMultiAction } from \"../data\";\nexport { ServerError } from \"../data\";\nexport const createServerData$ = createRouteData;\nexport const createServerAction$ = createRouteAction;\nexport const createServerMultiAction$ = createRouteMultiAction;\n",
+      "start": 1684878594484,
+      "end": 1684878594496,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "result": "import { createRouteAction, createRouteData, createRouteMultiAction } from \"../data\";\nexport { ServerError } from \"../data\";\nexport const createServerData$ = createRouteData;\nexport const createServerAction$ = createRouteAction;\nexport const createServerMultiAction$ = createRouteMultiAction;\n",
+      "start": 1684878594496,
+      "end": 1684878594496,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-analysis",
+      "result": "import { createRouteAction, createRouteData, createRouteMultiAction } from \"/@fs/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/solid-start/data/index.ts\";\nexport { ServerError } from \"/@fs/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/solid-start/data/index.ts\";\nexport const createServerData$ = createRouteData;\nexport const createServerAction$ = createRouteAction;\nexport const createServerMultiAction$ = createRouteMultiAction;\n",
+      "start": 1684878594496,
+      "end": 1684878594496,
+      "order": "normal"
+    }
+  ]
+}

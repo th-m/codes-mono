@@ -1,0 +1,32 @@
+{
+  "resolvedId": "/Users/thom/Sites/th-m/th-m.codes.mono/packages/home/src/routes/api/user.ts",
+  "transforms": [
+    {
+      "name": "__load__",
+      "result": "import { APIEvent, json } from \"solid-start/api\";\nimport { getUser } from \"~/models/session.server\";\n\nexport async function GET(e:APIEvent) {\n  const d = await getUser(e.request)\n  return json(d);\n}\n\n// export async function POST(e: APIEvent) {\n//   // const data = await e.request.json();\n//   const d = await getUser(e.request)\n//   return json(d);\n// }\n\n// export async function PATCH() {\n//   // ...\n// }\n\n// export async function DELETE() {\n//   // ...\n// }\n",
+      "start": 1684878594425,
+      "end": 1684878594425
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { json } from \"solid-start/api\";\nimport { getUser } from \"~/models/session.server\";\nexport async function GET(e) {\n  const d = await getUser(e.request);\n  return json(d);\n}\n",
+      "start": 1684878594425,
+      "end": 1684878594465,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "result": "import { json } from \"solid-start/api\";\nimport { getUser } from \"~/models/session.server\";\nexport async function GET(e) {\n  const d = await getUser(e.request);\n  return json(d);\n}\n",
+      "start": 1684878594465,
+      "end": 1684878594465,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-analysis",
+      "result": "import { json } from \"/@fs/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/solid-start/api/index.ts\";\nimport { getUser } from \"/src/models/session.server.ts\";\nexport async function GET(e) {\n  const d = await getUser(e.request);\n  return json(d);\n}\n",
+      "start": 1684878594465,
+      "end": 1684878594466,
+      "order": "normal"
+    }
+  ]
+}

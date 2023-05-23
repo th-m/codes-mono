@@ -1,0 +1,32 @@
+{
+  "resolvedId": "/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/solid-start/api/middleware.ts",
+  "transforms": [
+    {
+      "name": "__load__",
+      "result": "import { Middleware } from \"../entry-server\";\nimport { FetchEvent, FETCH_EVENT } from \"../server/types\";\nimport { getApiHandler } from \"./index\";\nimport { internalFetch } from \"./internalFetch\";\n\nexport const apiRoutes: Middleware = ({ forward }) => {\n  return async (event: FetchEvent) => {\n    let apiHandler = getApiHandler(new URL(event.request.url), event.request.method);\n    if (apiHandler) {\n      let apiEvent = Object.freeze({\n        request: event.request,\n        clientAddress: event.clientAddress,\n        locals: event.locals,\n        params: apiHandler.params,\n        env: event.env,\n        $type: FETCH_EVENT,\n        fetch: internalFetch\n      });\n      try {\n        return await apiHandler.handler(apiEvent);\n      } catch (error) {\n        if (error instanceof Response) {\n          return error;\n        }\n        return new Response(JSON.stringify(error), {\n          status: 500\n        });\n      }\n    }\n    return await forward(event);\n  };\n};\n",
+      "start": 1684878594143,
+      "end": 1684878594143
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { FETCH_EVENT } from \"../server/types\";\nimport { getApiHandler } from \"./index\";\nimport { internalFetch } from \"./internalFetch\";\nexport const apiRoutes = ({ forward }) => {\n  return async (event) => {\n    let apiHandler = getApiHandler(new URL(event.request.url), event.request.method);\n    if (apiHandler) {\n      let apiEvent = Object.freeze({\n        request: event.request,\n        clientAddress: event.clientAddress,\n        locals: event.locals,\n        params: apiHandler.params,\n        env: event.env,\n        $type: FETCH_EVENT,\n        fetch: internalFetch\n      });\n      try {\n        return await apiHandler.handler(apiEvent);\n      } catch (error) {\n        if (error instanceof Response) {\n          return error;\n        }\n        return new Response(JSON.stringify(error), {\n          status: 500\n        });\n      }\n    }\n    return await forward(event);\n  };\n};\n",
+      "start": 1684878594143,
+      "end": 1684878594149,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "result": "import { FETCH_EVENT } from \"../server/types\";\nimport { getApiHandler } from \"./index\";\nimport { internalFetch } from \"./internalFetch\";\nexport const apiRoutes = ({ forward }) => {\n  return async (event) => {\n    let apiHandler = getApiHandler(new URL(event.request.url), event.request.method);\n    if (apiHandler) {\n      let apiEvent = Object.freeze({\n        request: event.request,\n        clientAddress: event.clientAddress,\n        locals: event.locals,\n        params: apiHandler.params,\n        env: event.env,\n        $type: FETCH_EVENT,\n        fetch: internalFetch\n      });\n      try {\n        return await apiHandler.handler(apiEvent);\n      } catch (error) {\n        if (error instanceof Response) {\n          return error;\n        }\n        return new Response(JSON.stringify(error), {\n          status: 500\n        });\n      }\n    }\n    return await forward(event);\n  };\n};\n",
+      "start": 1684878594149,
+      "end": 1684878594149,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-analysis",
+      "result": "import { FETCH_EVENT } from \"/@fs/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/solid-start/server/types.tsx\";\nimport { getApiHandler } from \"/@fs/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/solid-start/api/index.ts\";\nimport { internalFetch } from \"/@fs/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/solid-start/api/internalFetch.ts\";\nexport const apiRoutes = ({ forward }) => {\n  return async (event) => {\n    let apiHandler = getApiHandler(new URL(event.request.url), event.request.method);\n    if (apiHandler) {\n      let apiEvent = Object.freeze({\n        request: event.request,\n        clientAddress: event.clientAddress,\n        locals: event.locals,\n        params: apiHandler.params,\n        env: event.env,\n        $type: FETCH_EVENT,\n        fetch: internalFetch\n      });\n      try {\n        return await apiHandler.handler(apiEvent);\n      } catch (error) {\n        if (error instanceof Response) {\n          return error;\n        }\n        return new Response(JSON.stringify(error), {\n          status: 500\n        });\n      }\n    }\n    return await forward(event);\n  };\n};\n",
+      "start": 1684878594149,
+      "end": 1684878594149,
+      "order": "normal"
+    }
+  ]
+}

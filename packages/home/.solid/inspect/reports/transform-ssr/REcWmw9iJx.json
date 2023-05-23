@@ -1,0 +1,32 @@
+{
+  "resolvedId": "/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/solid-start/server/components/HttpHeader.tsx",
+  "transforms": [
+    {
+      "name": "__load__",
+      "result": "import { onCleanup, useContext } from \"solid-js\";\nimport { isServer } from \"solid-js/web\";\nimport { ServerContext } from \"../ServerContext\";\n\nexport function HttpHeader(props: { name: string; value: string; append?: boolean }) {\n  const pageContext = useContext(ServerContext);\n\n  if (isServer) {\n    if (props.append) {\n      pageContext!.responseHeaders.append(props.name, props.value);\n    } else {\n      pageContext!.responseHeaders.set(props.name, props.value);\n    }\n  }\n\n  onCleanup(() => {\n    if (isServer) {\n      const value = pageContext!.responseHeaders.get(props.name);\n      if (value) {\n        const values = value.split(\", \");\n        const index = values.indexOf(props.value);\n        index !== -1 && values.splice(index, 1);\n        if (values.length) pageContext!.responseHeaders.set(props.name, values.join(\", \"));\n        else pageContext!.responseHeaders.delete(props.name);\n      }\n    }\n  });\n\n  return null;\n}\n",
+      "start": 1684878594484,
+      "end": 1684878594484
+    },
+    {
+      "name": "solid",
+      "result": "import { onCleanup, useContext } from \"solid-js\";\nimport { isServer } from \"solid-js/web\";\nimport { ServerContext } from \"../ServerContext\";\nexport function HttpHeader(props) {\n  const pageContext = useContext(ServerContext);\n  if (isServer) {\n    if (props.append) {\n      pageContext.responseHeaders.append(props.name, props.value);\n    } else {\n      pageContext.responseHeaders.set(props.name, props.value);\n    }\n  }\n  onCleanup(() => {\n    if (isServer) {\n      const value = pageContext.responseHeaders.get(props.name);\n      if (value) {\n        const values = value.split(\", \");\n        const index = values.indexOf(props.value);\n        index !== -1 && values.splice(index, 1);\n        if (values.length) pageContext.responseHeaders.set(props.name, values.join(\", \"));else pageContext.responseHeaders.delete(props.name);\n      }\n    }\n  });\n  return null;\n}",
+      "start": 1684878594484,
+      "end": 1684878594486,
+      "order": "pre"
+    },
+    {
+      "name": "vite:define",
+      "result": "import { onCleanup, useContext } from \"solid-js\";\nimport { isServer } from \"solid-js/web\";\nimport { ServerContext } from \"../ServerContext\";\nexport function HttpHeader(props) {\n  const pageContext = useContext(ServerContext);\n  if (isServer) {\n    if (props.append) {\n      pageContext.responseHeaders.append(props.name, props.value);\n    } else {\n      pageContext.responseHeaders.set(props.name, props.value);\n    }\n  }\n  onCleanup(() => {\n    if (isServer) {\n      const value = pageContext.responseHeaders.get(props.name);\n      if (value) {\n        const values = value.split(\", \");\n        const index = values.indexOf(props.value);\n        index !== -1 && values.splice(index, 1);\n        if (values.length) pageContext.responseHeaders.set(props.name, values.join(\", \"));else pageContext.responseHeaders.delete(props.name);\n      }\n    }\n  });\n  return null;\n}",
+      "start": 1684878594486,
+      "end": 1684878594486,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-analysis",
+      "result": "import { onCleanup, useContext } from \"solid-js\";\nimport { isServer } from \"solid-js/web\";\nimport { ServerContext } from \"/@fs/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/solid-start/server/ServerContext.tsx\";\nexport function HttpHeader(props) {\n  const pageContext = useContext(ServerContext);\n  if (isServer) {\n    if (props.append) {\n      pageContext.responseHeaders.append(props.name, props.value);\n    } else {\n      pageContext.responseHeaders.set(props.name, props.value);\n    }\n  }\n  onCleanup(() => {\n    if (isServer) {\n      const value = pageContext.responseHeaders.get(props.name);\n      if (value) {\n        const values = value.split(\", \");\n        const index = values.indexOf(props.value);\n        index !== -1 && values.splice(index, 1);\n        if (values.length) pageContext.responseHeaders.set(props.name, values.join(\", \"));else pageContext.responseHeaders.delete(props.name);\n      }\n    }\n  });\n  return null;\n}",
+      "start": 1684878594486,
+      "end": 1684878594486,
+      "order": "normal"
+    }
+  ]
+}

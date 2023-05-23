@@ -1,0 +1,32 @@
+{
+  "resolvedId": "/Users/thom/Sites/th-m/th-m.codes.mono/packages/home/src/root.css",
+  "transforms": [
+    {
+      "name": "__load__",
+      "result": "@tailwind base;\n@tailwind components;\n@tailwind utilities;",
+      "start": 1684878594294,
+      "end": 1684878594294
+    },
+    {
+      "name": "vite:css",
+      "result": "@tailwind base;\n@tailwind components;\n@tailwind utilities;",
+      "start": 1684878594294,
+      "end": 1684878594294,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "export default \"@tailwind base;\\n@tailwind components;\\n@tailwind utilities;\"",
+      "start": 1684878594294,
+      "end": 1684878594294,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-analysis",
+      "result": "export default \"@tailwind base;\\n@tailwind components;\\n@tailwind utilities;\"",
+      "start": 1684878594294,
+      "end": 1684878594294,
+      "order": "normal"
+    }
+  ]
+}

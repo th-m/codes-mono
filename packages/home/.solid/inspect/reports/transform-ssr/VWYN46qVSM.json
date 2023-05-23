@@ -1,0 +1,32 @@
+{
+  "resolvedId": "/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/@solidjs/router/dist/index.jsx",
+  "transforms": [
+    {
+      "name": "__load__",
+      "result": "export * from \"./components\";\nexport * from \"./integration\";\nexport * from \"./lifecycle\";\nexport { useRouteData, useHref, useIsRouting, useLocation, useMatch, useNavigate, useParams, useResolvedPath, useSearchParams, useBeforeLeave, } from \"./routing\";\nexport { mergeSearchString as _mergeSearchString } from \"./utils\";\n",
+      "start": 1684878594092,
+      "end": 1684878594092
+    },
+    {
+      "name": "solid",
+      "result": "export * from \"./components\";\nexport * from \"./integration\";\nexport * from \"./lifecycle\";\nexport { useRouteData, useHref, useIsRouting, useLocation, useMatch, useNavigate, useParams, useResolvedPath, useSearchParams, useBeforeLeave } from \"./routing\";\nexport { mergeSearchString as _mergeSearchString } from \"./utils\";",
+      "start": 1684878594092,
+      "end": 1684878594094,
+      "order": "pre"
+    },
+    {
+      "name": "vite:define",
+      "result": "export * from \"./components\";\nexport * from \"./integration\";\nexport * from \"./lifecycle\";\nexport { useRouteData, useHref, useIsRouting, useLocation, useMatch, useNavigate, useParams, useResolvedPath, useSearchParams, useBeforeLeave } from \"./routing\";\nexport { mergeSearchString as _mergeSearchString } from \"./utils\";",
+      "start": 1684878594094,
+      "end": 1684878594094,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-analysis",
+      "result": "export * from \"/@fs/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/@solidjs/router/dist/components.jsx\";\nexport * from \"/@fs/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/@solidjs/router/dist/integration.js\";\nexport * from \"/@fs/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/@solidjs/router/dist/lifecycle.js\";\nexport { useRouteData, useHref, useIsRouting, useLocation, useMatch, useNavigate, useParams, useResolvedPath, useSearchParams, useBeforeLeave } from \"/@fs/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/@solidjs/router/dist/routing.js\";\nexport { mergeSearchString as _mergeSearchString } from \"/@fs/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/@solidjs/router/dist/utils.js\";",
+      "start": 1684878594094,
+      "end": 1684878594095,
+      "order": "normal"
+    }
+  ]
+}

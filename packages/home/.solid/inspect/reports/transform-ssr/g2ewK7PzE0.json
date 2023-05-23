@@ -1,0 +1,32 @@
+{
+  "resolvedId": "/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/solid-start/data/index.ts",
+  "transforms": [
+    {
+      "name": "__load__",
+      "result": "export { useRouteData } from \"@solidjs/router\";\nexport { createRouteAction, createRouteMultiAction } from \"./createRouteAction\";\nexport { createRouteData, refetchRouteData } from \"./createRouteData\";\nexport type { FormAction, FormMethod, FormProps, SubmitOptions } from \"./Form\";\nexport { FormError, ServerError } from \"./FormError\";\n\n",
+      "start": 1684878594301,
+      "end": 1684878594301
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "export { useRouteData } from \"@solidjs/router\";\nexport { createRouteAction, createRouteMultiAction } from \"./createRouteAction\";\nexport { createRouteData, refetchRouteData } from \"./createRouteData\";\nexport { FormError, ServerError } from \"./FormError\";\n",
+      "start": 1684878594301,
+      "end": 1684878594340,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "result": "export { useRouteData } from \"@solidjs/router\";\nexport { createRouteAction, createRouteMultiAction } from \"./createRouteAction\";\nexport { createRouteData, refetchRouteData } from \"./createRouteData\";\nexport { FormError, ServerError } from \"./FormError\";\n",
+      "start": 1684878594340,
+      "end": 1684878594340,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-analysis",
+      "result": "export { useRouteData } from \"/@fs/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/@solidjs/router/dist/index.jsx\";\nexport { createRouteAction, createRouteMultiAction } from \"/@fs/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/solid-start/data/createRouteAction.tsx\";\nexport { createRouteData, refetchRouteData } from \"/@fs/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/solid-start/data/createRouteData.tsx\";\nexport { FormError, ServerError } from \"/@fs/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/solid-start/data/FormError.tsx\";\n",
+      "start": 1684878594340,
+      "end": 1684878594341,
+      "order": "normal"
+    }
+  ]
+}

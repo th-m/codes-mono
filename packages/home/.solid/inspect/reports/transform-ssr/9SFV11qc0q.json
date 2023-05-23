@@ -1,0 +1,32 @@
+{
+  "resolvedId": "/Users/thom/Sites/th-m/th-m.codes.mono/packages/home/src/models/users.client.ts",
+  "transforms": [
+    {
+      "name": "__load__",
+      "result": "export const fetchUser = async () => {\n    const user = await fetch(\"/api/user\", {\"credentials\":\"same-origin\"});\n    const data = await user.json();\n    return data;\n  };",
+      "start": 1684878594311,
+      "end": 1684878594311
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "export const fetchUser = async () => {\n  const user = await fetch(\"/api/user\", { \"credentials\": \"same-origin\" });\n  const data = await user.json();\n  return data;\n};\n",
+      "start": 1684878594311,
+      "end": 1684878594482,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "result": "export const fetchUser = async () => {\n  const user = await fetch(\"/api/user\", { \"credentials\": \"same-origin\" });\n  const data = await user.json();\n  return data;\n};\n",
+      "start": 1684878594482,
+      "end": 1684878594482,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-analysis",
+      "result": "export const fetchUser = async () => {\n  const user = await fetch(\"/api/user\", { \"credentials\": \"same-origin\" });\n  const data = await user.json();\n  return data;\n};\n",
+      "start": 1684878594482,
+      "end": 1684878594482,
+      "order": "normal"
+    }
+  ]
+}

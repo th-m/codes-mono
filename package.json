@@ -3,34 +3,43 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "postinstall": "remix setup node && node ./tools/scripts/patch-nx-cli.js"
+    "dev:blog": "npx nx run blog:dev --verbose",
+    "dev:home": "npx nx run home:dev --verbose"
   },
   "private": true,
   "dependencies": {
-    "@nrwl/remix": "^13.7.1",
-    "@remix-run/react": "^1.0.6",
-    "@remix-run/serve": "^1.0.6",
-    "@vitejs/plugin-react": "^1.3.0",
-    "@wanews/nx-vite": "^0.7.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "remix": "^1.0.6",
+    "@solidjs/meta": "^0.28.5",
+    "@solidjs/router": "^0.8.2",
+    "@supabase/supabase-js": "^2.22.0",
+    "limax": "^4.0.0",
+    "openai": "^3.2.1",
+    "solid-start": "^0.2.26",
+    "solid-start-node": "^0.2.26",
+    "tiny-invariant": "^1.3.1",
     "tslib": "^2.0.0"
   },
   "overrides": {
     "@nrwl/js": "16.2.2",
     "@nrwl/workspace": "16.2.2",
+    "@nrwl/linter": "16.2.2",
     "nx": "16.2.2",
-    "typescript": "5.0.4"
+    "typescript": "5.0.4",
+    "vite": "4.3.8"
   },
   "devDependencies": {
+    "@astrojs/image": "^0.16.9",
+    "@astrojs/mdx": "^0.19.3",
     "@astrojs/partytown": "^1.2.2",
     "@astrojs/react": "^2.2.0",
+    "@astrojs/rss": "^2.4.3",
     "@astrojs/sitemap": "^1.3.1",
     "@astrojs/solid-js": "^2.2.0",
     "@astrojs/svelte": "^2.2.0",
     "@astrojs/tailwind": "^3.1.3",
     "@astrojs/vue": "^2.2.0",
+    "@astrolib/analytics": "^0.3.0",
+    "@astrolib/seo": "^0.3.0",
+    "@fontsource/inter": "^4.5.15",
     "@nrwl/eslint-plugin-nx": "15.9.4",
     "@nrwl/jest": "16.2.2",
     "@nrwl/js": "16.2.2",
@@ -39,8 +48,10 @@
     "@nrwl/workspace": "16.2.2",
     "@nx/js": "16.2.2",
     "@nxext/solid": "^15.7.0",
+    "@nxext/vite": "^15.1.0",
     "@nxtensions/astro": "^3.5.0",
     "@remix-run/dev": "^1.0.6",
+    "@tailwindcss/typography": "^0.5.9",
     "@types/estree": "^0.0.47",
     "@types/jest": "27.0.2",
     "@types/node": "16.11.7",
@@ -49,23 +60,36 @@
     "@typescript-eslint/eslint-plugin": "^5.36.1",
     "@typescript-eslint/parser": "^5.36.1",
     "astro": "^2.5.0",
+    "astro-compress": "^1.1.44",
+    "astro-icon": "^0.8.0",
+    "autoprefixer": "^10.4.14",
     "eslint": "~8.15.0",
     "eslint-config-prettier": "8.1.0",
     "eslint-plugin-solid": "0.9.4",
     "jest": "27.2.3",
     "nx": "16.2.2",
+    "postcss": "^8.4.23",
     "prettier": "2.8.8",
+    "sharp": "^0.32.1",
     "solid-jest": "^0.2.0",
     "solid-js": "^1.6.10",
+    "solid-start-netlify": "^0.2.26",
     "solid-testing-library": "^0.5.1",
+    "subfont": "^6.12.5",
     "svelte": "^3.54.0",
-    "tailwindcss": "^3.0.24",
+    "svgo": "^3.0.2",
+    "tailwindcss": "^3.3.2",
     "ts-jest": "27.0.5",
     "typescript": "5.0.4",
     "vite-plugin-solid": "2.5.0",
     "vue": "^3.2.30"
   },
-  "workspaces": [
-    "packages/*"
-  ]
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/solid-start"
+    ]
+  }
 }

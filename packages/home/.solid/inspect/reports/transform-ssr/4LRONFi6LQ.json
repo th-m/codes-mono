@@ -1,0 +1,39 @@
+{
+  "resolvedId": "/Users/thom/Sites/th-m/th-m.codes.mono/packages/home/src/routes/(auth)/logout.tsx",
+  "transforms": [
+    {
+      "name": "__load__",
+      "result": "import { createServerAction$,  } from \"solid-start/server\";\nimport {  logout } from \"~/models/session.server\";\n\n\nexport default function Logout() {\n    const [login, { Form }] = createServerAction$(\n      async (form: FormData, { request }) => {\n       \n      const resp = await logout(request);\n      return resp\n       \n      ;\n      }\n    );\n\n  return (\n    <div>\n      <div>\n        <Form method=\"post\" noValidate>\n        \n          <button type=\"submit\">Log out</button>\n\n        </Form>\n      </div>\n    </div>\n  );\n}\n",
+      "start": 1684878594224,
+      "end": 1684878594224
+    },
+    {
+      "name": "solid-start-file-system-router",
+      "result": "import { escape as _$escape } from \"solid-js/web\";\nimport { createComponent as _$createComponent } from \"solid-js/web\";\nimport { ssr as _$ssr } from \"solid-js/web\";\nimport { ssrHydrationKey as _$ssrHydrationKey } from \"solid-js/web\";\nconst _tmpl$ = [\"<button\", \" type=\\\"submit\\\">Log out</button>\"],\n  _tmpl$2 = [\"<div\", \"><div>\", \"</div></div>\"];\nimport \"solid-start/data\";\nimport { createRouteAction } from \"solid-start/data\";\nimport server$ from \"solid-start/server\";\nimport \"solid-start/server\";\nimport { logout } from \"~/models/session.server\";\nconst $$server_module0 = server$.createHandler(async function $$serverHandler0(form, {\n  request\n}) {\n  const $$ctx = this;\n  const resp = await logout(request);\n  return resp;\n}, \"/_m/src/routes/(auth)/logout.tsx/0/login\", true);\nserver$.registerHandler(\"/_m/src/routes/(auth)/logout.tsx/0/login\", $$server_module0);\nexport default function Logout() {\n  const [login, {\n    Form\n  }] = createRouteAction($$server_module0);\n  return _$ssr(_tmpl$2, _$ssrHydrationKey(), _$escape(_$createComponent(Form, {\n    method: \"post\",\n    noValidate: true,\n    get children() {\n      return _$ssr(_tmpl$, _$ssrHydrationKey());\n    }\n  })));\n}",
+      "start": 1684878594224,
+      "end": 1684878594230,
+      "order": "pre"
+    },
+    {
+      "name": "solid",
+      "result": "import { escape as _$escape } from \"solid-js/web\";\nimport { createComponent as _$createComponent } from \"solid-js/web\";\nimport { ssr as _$ssr } from \"solid-js/web\";\nimport { ssrHydrationKey as _$ssrHydrationKey } from \"solid-js/web\";\nconst _tmpl$ = [\"<button\", \" type=\\\"submit\\\">Log out</button>\"],\n  _tmpl$2 = [\"<div\", \"><div>\", \"</div></div>\"];\nimport \"solid-start/data\";\nimport { createRouteAction } from \"solid-start/data\";\nimport server$ from \"solid-start/server\";\nimport \"solid-start/server\";\nimport { logout } from \"~/models/session.server\";\nconst $$server_module0 = server$.createHandler(async function $$serverHandler0(form, {\n  request\n}) {\n  const $$ctx = this;\n  const resp = await logout(request);\n  return resp;\n}, \"/_m/src/routes/(auth)/logout.tsx/0/login\", true);\nserver$.registerHandler(\"/_m/src/routes/(auth)/logout.tsx/0/login\", $$server_module0);\nexport default function Logout() {\n  const [login, {\n    Form\n  }] = createRouteAction($$server_module0);\n  return _$ssr(_tmpl$2, _$ssrHydrationKey(), _$escape(_$createComponent(Form, {\n    method: \"post\",\n    noValidate: true,\n    get children() {\n      return _$ssr(_tmpl$, _$ssrHydrationKey());\n    }\n  })));\n}",
+      "start": 1684878594230,
+      "end": 1684878594232,
+      "order": "pre"
+    },
+    {
+      "name": "vite:define",
+      "result": "import { escape as _$escape } from \"solid-js/web\";\nimport { createComponent as _$createComponent } from \"solid-js/web\";\nimport { ssr as _$ssr } from \"solid-js/web\";\nimport { ssrHydrationKey as _$ssrHydrationKey } from \"solid-js/web\";\nconst _tmpl$ = [\"<button\", \" type=\\\"submit\\\">Log out</button>\"],\n  _tmpl$2 = [\"<div\", \"><div>\", \"</div></div>\"];\nimport \"solid-start/data\";\nimport { createRouteAction } from \"solid-start/data\";\nimport server$ from \"solid-start/server\";\nimport \"solid-start/server\";\nimport { logout } from \"~/models/session.server\";\nconst $$server_module0 = server$.createHandler(async function $$serverHandler0(form, {\n  request\n}) {\n  const $$ctx = this;\n  const resp = await logout(request);\n  return resp;\n}, \"/_m/src/routes/(auth)/logout.tsx/0/login\", true);\nserver$.registerHandler(\"/_m/src/routes/(auth)/logout.tsx/0/login\", $$server_module0);\nexport default function Logout() {\n  const [login, {\n    Form\n  }] = createRouteAction($$server_module0);\n  return _$ssr(_tmpl$2, _$ssrHydrationKey(), _$escape(_$createComponent(Form, {\n    method: \"post\",\n    noValidate: true,\n    get children() {\n      return _$ssr(_tmpl$, _$ssrHydrationKey());\n    }\n  })));\n}",
+      "start": 1684878594233,
+      "end": 1684878594233,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-analysis",
+      "result": "import { escape as _$escape } from \"solid-js/web\";\nimport { createComponent as _$createComponent } from \"solid-js/web\";\nimport { ssr as _$ssr } from \"solid-js/web\";\nimport { ssrHydrationKey as _$ssrHydrationKey } from \"solid-js/web\";\nconst _tmpl$ = [\"<button\", \" type=\\\"submit\\\">Log out</button>\"],\n  _tmpl$2 = [\"<div\", \"><div>\", \"</div></div>\"];\nimport \"/@fs/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/solid-start/data/index.ts\";\nimport { createRouteAction } from \"/@fs/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/solid-start/data/index.ts\";\nimport server$ from \"/@fs/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/solid-start/server/server.ts\";\nimport \"/@fs/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/solid-start/server/server.ts\";\nimport { logout } from \"/src/models/session.server.ts\";\nconst $$server_module0 = server$.createHandler(async function $$serverHandler0(form, {\n  request\n}) {\n  const $$ctx = this;\n  const resp = await logout(request);\n  return resp;\n}, \"/_m/src/routes/(auth)/logout.tsx/0/login\", true);\nserver$.registerHandler(\"/_m/src/routes/(auth)/logout.tsx/0/login\", $$server_module0);\nexport default function Logout() {\n  const [login, {\n    Form\n  }] = createRouteAction($$server_module0);\n  return _$ssr(_tmpl$2, _$ssrHydrationKey(), _$escape(_$createComponent(Form, {\n    method: \"post\",\n    noValidate: true,\n    get children() {\n      return _$ssr(_tmpl$, _$ssrHydrationKey());\n    }\n  })));\n}",
+      "start": 1684878594233,
+      "end": 1684878594233,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "resolvedId": "/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/solid-start/server/server.ts",
+  "transforms": [
+    {
+      "name": "__load__",
+      "result": "import { server$ } from \"./server-functions/server\";\n\nexport default server$;\n\nexport * from \"./shared\";\n",
+      "start": 1684878594311,
+      "end": 1684878594311
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { server$ } from \"./server-functions/server\";\nexport default server$;\nexport * from \"./shared\";\n",
+      "start": 1684878594311,
+      "end": 1684878594342,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "result": "import { server$ } from \"./server-functions/server\";\nexport default server$;\nexport * from \"./shared\";\n",
+      "start": 1684878594342,
+      "end": 1684878594342,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-analysis",
+      "result": "import { server$ } from \"/@fs/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/solid-start/server/server-functions/server.ts\";\nexport default server$;\nexport * from \"/@fs/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/solid-start/server/shared.ts\";\n",
+      "start": 1684878594342,
+      "end": 1684878594344,
+      "order": "normal"
+    }
+  ]
+}
