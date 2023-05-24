@@ -1,7 +1,7 @@
 {
   "name": "home",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/home/src",
+  "sourceRoot": "apps/home/src",
   "projectType": "application",
   "tags": [],
   "targets": {
@@ -9,7 +9,7 @@
       "executor": "@nxext/vite:build",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/packages/home",
+        "outputPath": "dist/apps/home",
         "frameworkConfigFile": "@nxext/solid/plugins/vite"
       },
       "configurations": {
@@ -19,7 +19,7 @@
     "dev_old": {
       "executor": "@nxext/vite:dev",
       "options": {
-        "outputPath": "dist/packages/home",
+        "outputPath": "dist/apps/home",
         "frameworkConfigFile": "@nxext/solid/plugins/vite"
       }
     },
@@ -27,7 +27,7 @@
       "command": "solid-start build"
      },
      "dev": {
-       "command": "npm --prefix packages/home run dev"
+       "command": "npm --prefix apps/home run dev"
      },
      "start": {
        "command": "solid-start start"

@@ -1,0 +1,44 @@
+{
+  "name": "postgrest-typed",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/postgrest-typed/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/postgrest-typed",
+        "main": "libs/postgrest-typed/src/index.ts",
+        "tsConfig": "libs/postgrest-typed/tsconfig.lib.json",
+        "assets": ["libs/postgrest-typed/*.md"]
+      }
+    },
+    "publish": {
+      "command": "node tools/scripts/publish.mjs postgrest-typed {args.ver} {args.tag}",
+      "dependsOn": ["build"]
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/postgrest-typed/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/postgrest-typed/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    }
+  },
+  "tags": []
+}

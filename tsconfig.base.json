@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "th-m/firebase-typed": ["libs/firebase-typed/src/index.ts"],
+      "th-m/postgrest-typed": ["libs/postgrest-typed/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

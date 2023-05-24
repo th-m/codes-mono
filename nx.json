@@ -1,4 +1,5 @@
 {
+  "extends": "@nrwl/workspace/presets/core.json",
   "plugins": ["@nxtensions/astro"],
   "npmScope": "th-m.codes",
   "targetDefaults": {
@@ -29,5 +30,8 @@
     "defaultCollection": "@nrwl/workspace"
   },
   "defaultProject": "blog",
-  "extends": "@nrwl/workspace/presets/core.json"
+  "workspaceLayout": {
+    "appsDir": "apps",
+    "libsDir": "libs"
+  }
 }
