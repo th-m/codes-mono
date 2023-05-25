@@ -4,14 +4,14 @@
     {
       "name": "vite:load-fallback",
       "result": "import { createRouteAction, createRouteData, createRouteMultiAction } from \"../data\";\nexport { ServerError } from \"../data\";\nexport const createServerData$ = createRouteData;\nexport const createServerAction$ = createRouteAction;\nexport const createServerMultiAction$ = createRouteMultiAction;\n",
-      "start": 1685058359070,
-      "end": 1685058359093
+      "start": 1685059172700,
+      "end": 1685059172708
     },
     {
       "name": "vite:esbuild",
       "result": "import { createRouteAction, createRouteData, createRouteMultiAction } from \"../data\";\nexport { ServerError } from \"../data\";\nexport const createServerData$ = createRouteData;\nexport const createServerAction$ = createRouteAction;\nexport const createServerMultiAction$ = createRouteMultiAction;\n",
-      "start": 1685058359093,
-      "end": 1685058359095,
+      "start": 1685059172708,
+      "end": 1685059172709,
       "order": "normal"
     }
   ]

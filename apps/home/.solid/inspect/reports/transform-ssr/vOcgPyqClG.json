@@ -4,21 +4,21 @@
     {
       "name": "vite:load-fallback",
       "result": "\nexport default function Home() {\n  \n  return (\n    <main class=\"text-center h-full mx-auto text-gray-50 p-4 bg-slate-900\">\n      <h1 class=\"max-6-xs text-6xl font-thin uppercase my-16\">\n       th-m.codes\n      </h1>\n      <div class=\"flex flex-row justify-center\">\n       <img src=\"/images/th_m-bald.webp\" />\n      </div>\n     \n    </main>\n  );\n}\n",
-      "start": 1685058358762,
-      "end": 1685058358817
+      "start": 1685059172300,
+      "end": 1685059172349
     },
     {
       "name": "solid-start-file-system-router",
       "result": "import { ssr as _$ssr } from \"solid-js/web\";\nimport { ssrHydrationKey as _$ssrHydrationKey } from \"solid-js/web\";\nconst _tmpl$ = [\"<main\", \" class=\\\"text-center h-full mx-auto text-gray-50 p-4 bg-slate-900\\\"><h1 class=\\\"max-6-xs text-6xl font-thin uppercase my-16\\\">th-m.codes</h1><div class=\\\"flex flex-row justify-center\\\"><img src=\\\"/images/th_m-bald.webp\\\"></div></main>\"];\nexport default function Home() {\n  return _$ssr(_tmpl$, _$ssrHydrationKey());\n}",
-      "start": 1685058358817,
-      "end": 1685058358818,
+      "start": 1685059172349,
+      "end": 1685059172351,
       "order": "pre"
     },
     {
       "name": "solid",
       "result": "import { ssr as _$ssr } from \"solid-js/web\";\nimport { ssrHydrationKey as _$ssrHydrationKey } from \"solid-js/web\";\nconst _tmpl$ = [\"<main\", \" class=\\\"text-center h-full mx-auto text-gray-50 p-4 bg-slate-900\\\"><h1 class=\\\"max-6-xs text-6xl font-thin uppercase my-16\\\">th-m.codes</h1><div class=\\\"flex flex-row justify-center\\\"><img src=\\\"/images/th_m-bald.webp\\\"></div></main>\"];\nexport default function Home() {\n  return _$ssr(_tmpl$, _$ssrHydrationKey());\n}",
-      "start": 1685058358818,
-      "end": 1685058358819,
+      "start": 1685059172351,
+      "end": 1685059172352,
       "order": "pre"
     }
   ]
