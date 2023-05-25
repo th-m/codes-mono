@@ -1,0 +1,18 @@
+{
+  "resolvedId": "/Users/thom/Sites/th-m/th-m.codes.mono/apps/home/node_modules/solid-start/server/components/HttpStatusCode.tsx",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import { onCleanup, useContext } from \"solid-js\";\nimport { isServer } from \"solid-js/web\";\nimport { ServerContext } from \"../ServerContext\";\n\nexport function HttpStatusCode(props: { code: number }) {\n  const context = useContext(ServerContext);\n\n  if (isServer) {\n    context!.setStatusCode(props.code);\n  }\n\n  onCleanup(() => {\n    if (isServer) {\n      context!.setStatusCode(200);\n    }\n  });\n\n  return null;\n}\n",
+      "start": 1685056431584,
+      "end": 1685056431594
+    },
+    {
+      "name": "solid",
+      "result": "import { onCleanup, useContext } from \"solid-js\";\nimport { isServer } from \"solid-js/web\";\nimport { ServerContext } from \"../ServerContext\";\nexport function HttpStatusCode(props) {\n  const context = useContext(ServerContext);\n  if (isServer) {\n    context.setStatusCode(props.code);\n  }\n  onCleanup(() => {\n    if (isServer) {\n      context.setStatusCode(200);\n    }\n  });\n  return null;\n}",
+      "start": 1685056431594,
+      "end": 1685056431595,
+      "order": "pre"
+    }
+  ]
+}

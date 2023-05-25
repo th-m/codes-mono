@@ -1,0 +1,18 @@
+{
+  "resolvedId": "/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/solid-start/entry-client/index.tsx",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "export { default as mount } from \"./mount\";\nexport { default as StartClient } from \"./StartClient\";\n",
+      "start": 1685056211567,
+      "end": 1685056211567
+    },
+    {
+      "name": "solid",
+      "result": "export { default as mount } from \"./mount\";\nexport { default as StartClient } from \"./StartClient\";",
+      "start": 1685056211567,
+      "end": 1685056211570,
+      "order": "pre"
+    }
+  ]
+}

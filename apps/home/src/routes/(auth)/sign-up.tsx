@@ -25,7 +25,6 @@ export default function SignUp() {
       if (errors.email || errors.password) {
         return { errors };
       }
-      console.log({email, password})
 
       const {session, error} = await createUser(email, password);
       if(error) {

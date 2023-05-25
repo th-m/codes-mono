@@ -1,0 +1,18 @@
+{
+  "resolvedId": "/Users/thom/Sites/th-m/th-m.codes.mono/apps/home/node_modules/solid-start/server/shared.ts",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "export { HttpHeader } from \"./components/HttpHeader\";\nexport { HttpStatusCode } from \"./components/HttpStatusCode\";\nexport { createServerAction$, createServerData$, createServerMultiAction$, ServerError } from \"./data\";\nexport * from \"./responses\";\nexport * from \"./ServerContext\";\nexport * from \"./types\";\n\n",
+      "start": 1685056431494,
+      "end": 1685056431562
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "export { HttpHeader } from \"./components/HttpHeader\";\nexport { HttpStatusCode } from \"./components/HttpStatusCode\";\nexport { createServerAction$, createServerData$, createServerMultiAction$, ServerError } from \"./data\";\nexport * from \"./responses\";\nexport * from \"./ServerContext\";\nexport * from \"./types\";\n",
+      "start": 1685056431562,
+      "end": 1685056431583,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "resolvedId": "/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/solid-start/error-boundary/index.tsx",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import { ErrorBoundary } from \"./ErrorBoundary\";\nexport { ErrorMessage } from \"./ErrorBoundary\";\nexport { ErrorBoundary };\nexport default ErrorBoundary;\n",
+      "start": 1685056211728,
+      "end": 1685056211755
+    },
+    {
+      "name": "solid",
+      "result": "import { ErrorBoundary } from \"./ErrorBoundary\";\nexport { ErrorMessage } from \"./ErrorBoundary\";\nexport { ErrorBoundary };\nexport default ErrorBoundary;",
+      "start": 1685056211755,
+      "end": 1685056211757,
+      "order": "pre"
+    }
+  ]
+}

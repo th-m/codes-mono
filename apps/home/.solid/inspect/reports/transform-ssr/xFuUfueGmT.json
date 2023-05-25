@@ -1,0 +1,18 @@
+{
+  "resolvedId": "/Users/thom/Sites/th-m/th-m.codes.mono/apps/home/src/entry-server.tsx",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import {\n  StartServer,\n  createHandler,\n  renderAsync,\n} from \"solid-start/entry-server\";\n\nexport default createHandler(\n  renderAsync((event) => <StartServer event={event} />)\n);\n",
+      "start": 1685056431198,
+      "end": 1685056431198
+    },
+    {
+      "name": "solid",
+      "result": "import { createComponent as _$createComponent } from \"solid-js/web\";\nimport { StartServer, createHandler, renderAsync } from \"solid-start/entry-server\";\nexport default createHandler(renderAsync(event => _$createComponent(StartServer, {\n  event: event\n})));",
+      "start": 1685056431198,
+      "end": 1685056431200,
+      "order": "pre"
+    }
+  ]
+}

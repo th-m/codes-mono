@@ -1,0 +1,18 @@
+{
+  "resolvedId": "/Users/thom/Sites/th-m/th-m.codes.mono/apps/home/node_modules/solid-start/server/server.ts",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import { server$ } from \"./server-functions/server\";\n\nexport default server$;\n\nexport * from \"./shared\";\n",
+      "start": 1685056431304,
+      "end": 1685056431476
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { server$ } from \"./server-functions/server\";\nexport default server$;\nexport * from \"./shared\";\n",
+      "start": 1685056431476,
+      "end": 1685056431492,
+      "order": "normal"
+    }
+  ]
+}

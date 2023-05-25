@@ -1,0 +1,18 @@
+{
+  "resolvedId": "/Users/thom/Sites/th-m/th-m.codes.mono/apps/home/src/models/users.client.ts",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "export const fetchUser = async () => {\n    const user = await fetch(\"/api/user\", {\"credentials\":\"same-origin\"});\n    const data = await user.json();\n    return data;\n  };",
+      "start": 1685056431359,
+      "end": 1685056431459
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "export const fetchUser = async () => {\n  const user = await fetch(\"/api/user\", { \"credentials\": \"same-origin\" });\n  const data = await user.json();\n  return data;\n};\n",
+      "start": 1685056431459,
+      "end": 1685056431492,
+      "order": "normal"
+    }
+  ]
+}

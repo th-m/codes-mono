@@ -16,8 +16,6 @@ invariant(
   "SUPABASE_SECRET must be set in your environment variables."
 );
 
-console.log({supabaseUrl, supabaseSecret})
-
 export const supabase = createClient(supabaseUrl, supabaseSecret);
 
 export async function createUser(email: string, password: string) {

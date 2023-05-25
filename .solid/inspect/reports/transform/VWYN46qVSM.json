@@ -1,0 +1,18 @@
+{
+  "resolvedId": "/Users/thom/Sites/th-m/th-m.codes.mono/node_modules/@solidjs/router/dist/index.jsx",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "export * from \"./components\";\nexport * from \"./integration\";\nexport * from \"./lifecycle\";\nexport { useRouteData, useHref, useIsRouting, useLocation, useMatch, useNavigate, useParams, useResolvedPath, useSearchParams, useBeforeLeave, } from \"./routing\";\nexport { mergeSearchString as _mergeSearchString } from \"./utils\";\n",
+      "start": 1685056211675,
+      "end": 1685056211715
+    },
+    {
+      "name": "solid",
+      "result": "export * from \"./components\";\nexport * from \"./integration\";\nexport * from \"./lifecycle\";\nexport { useRouteData, useHref, useIsRouting, useLocation, useMatch, useNavigate, useParams, useResolvedPath, useSearchParams, useBeforeLeave } from \"./routing\";\nexport { mergeSearchString as _mergeSearchString } from \"./utils\";",
+      "start": 1685056211715,
+      "end": 1685056211716,
+      "order": "pre"
+    }
+  ]
+}
