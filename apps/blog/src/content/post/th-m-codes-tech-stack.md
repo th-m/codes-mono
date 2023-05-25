@@ -1,13 +1,16 @@
 ---
-publishDate: 2023-05-23T06:41:43.618Z
+publishDate: 2023-05-25T06:41:43.618Z
 title: th-m.codes Tech Stack
 description: Let me share the th-m.codes tech stack - Netlify, NX, SolidStart, Astro, Supabase - with you.
 excerpt: My choice wasn't about picking the "best" tools but rather choosing ones that resonate with my personal preferences and working style. Let's explore each of them in detail.
 image: ~/assets/images/th-m-tech-stack.webp
 category: Web
 tags:
-- HTML
-- Web Development
+- SolidJS
+- Netlify
+- NX
+- Astro
+- Supabase
 
 # canonical: https://astrowind.vercel.app/astrowind-template-in-depth
 
