@@ -4,14 +4,14 @@
     {
       "name": "vite:load-fallback",
       "result": "import { server$ } from \"./server-functions/server\";\n\nexport default server$;\n\nexport * from \"./shared\";\n",
-      "start": 1685057166782,
-      "end": 1685057166882
+      "start": 1685057954345,
+      "end": 1685057954452
     },
     {
       "name": "vite:esbuild",
       "result": "import { server$ } from \"./server-functions/server\";\nexport default server$;\nexport * from \"./shared\";\n",
-      "start": 1685057166882,
-      "end": 1685057166891,
+      "start": 1685057954452,
+      "end": 1685057954472,
       "order": "normal"
     }
   ]

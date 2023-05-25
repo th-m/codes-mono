@@ -4,14 +4,14 @@
     {
       "name": "vite:load-fallback",
       "result": "import { mount, StartClient } from \"../entry-client\";\n\nmount(() => <StartClient />, document);\n",
-      "start": 1685056935423,
-      "end": 1685056935423
+      "start": 1685057849776,
+      "end": 1685057849777
     },
     {
       "name": "solid",
       "result": "import { createComponent as _$createComponent } from \"solid-js/web\";\nimport { mount, StartClient } from \"../entry-client\";\nmount(() => _$createComponent(StartClient, {}), document);",
-      "start": 1685056935424,
-      "end": 1685056935457,
+      "start": 1685057849777,
+      "end": 1685057849813,
       "order": "pre"
     }
   ]

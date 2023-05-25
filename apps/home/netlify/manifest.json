@@ -1,0 +1,125 @@
+{
+  "src/entry-client.tsx": {
+    "file": "assets/entry-client.9d21cc98.js",
+    "src": "src/entry-client.tsx",
+    "isEntry": true,
+    "dynamicImports": [
+      "src/routes/[...404].tsx",
+      "src/routes/about.tsx",
+      "src/routes/index.tsx",
+      "src/routes/(auth)/login.tsx",
+      "src/routes/(auth)/logout.tsx",
+      "src/routes/(auth)/sign-up.tsx",
+      "src/routes/apps/hubspot.tsx",
+      "src/routes/apps/index.tsx",
+      "src/routes/apps/shopify.tsx",
+      "src/routes/apps/slack.tsx"
+    ],
+    "css": [
+      "assets/entry-client.f5120d33.css"
+    ]
+  },
+  "src/routes/[...404].tsx": {
+    "file": "assets/_...404_.8a143280.js",
+    "src": "src/routes/[...404].tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-client.tsx"
+    ]
+  },
+  "src/routes/about.tsx": {
+    "file": "assets/about.20b499a8.js",
+    "src": "src/routes/about.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-client.tsx"
+    ]
+  },
+  "src/routes/index.tsx": {
+    "file": "assets/index.d039ee74.js",
+    "src": "src/routes/index.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-client.tsx"
+    ]
+  },
+  "src/routes/(auth)/login.tsx": {
+    "file": "assets/login.6513b8ee.js",
+    "src": "src/routes/(auth)/login.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-client.tsx",
+      "_browser.7020d17b.js"
+    ]
+  },
+  "_browser.7020d17b.js": {
+    "file": "assets/browser.7020d17b.js",
+    "imports": [
+      "src/entry-client.tsx"
+    ]
+  },
+  "src/routes/(auth)/logout.tsx": {
+    "file": "assets/logout.97e98bec.js",
+    "src": "src/routes/(auth)/logout.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-client.tsx",
+      "_browser.7020d17b.js"
+    ]
+  },
+  "src/routes/(auth)/sign-up.tsx": {
+    "file": "assets/sign-up.d4e431fa.js",
+    "src": "src/routes/(auth)/sign-up.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-client.tsx",
+      "_browser.7020d17b.js"
+    ]
+  },
+  "src/routes/apps/hubspot.tsx": {
+    "file": "assets/hubspot.d746ace5.js",
+    "src": "src/routes/apps/hubspot.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-client.tsx",
+      "_AppInstall.6af89568.js"
+    ]
+  },
+  "_AppInstall.6af89568.js": {
+    "file": "assets/AppInstall.6af89568.js",
+    "imports": [
+      "src/entry-client.tsx"
+    ]
+  },
+  "src/routes/apps/index.tsx": {
+    "file": "assets/index.c875ac63.js",
+    "src": "src/routes/apps/index.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-client.tsx",
+      "_browser.7020d17b.js"
+    ]
+  },
+  "src/routes/apps/shopify.tsx": {
+    "file": "assets/shopify.60af900b.js",
+    "src": "src/routes/apps/shopify.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-client.tsx",
+      "_AppInstall.6af89568.js"
+    ]
+  },
+  "src/routes/apps/slack.tsx": {
+    "file": "assets/slack.7d3ac50e.js",
+    "src": "src/routes/apps/slack.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-client.tsx",
+      "_AppInstall.6af89568.js"
+    ]
+  },
+  "src/entry-client.css": {
+    "file": "assets/entry-client.f5120d33.css",
+    "src": "src/entry-client.css"
+  }
+}

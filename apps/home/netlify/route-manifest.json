@@ -1,0 +1,181 @@
+{
+  "/*404": [
+    {
+      "type": "script",
+      "href": "/assets/_...404_.8a143280.js"
+    },
+    {
+      "type": "script",
+      "href": "/assets/entry-client.9d21cc98.js"
+    },
+    {
+      "type": "style",
+      "href": "/assets/entry-client.f5120d33.css"
+    }
+  ],
+  "/about": [
+    {
+      "type": "script",
+      "href": "/assets/about.20b499a8.js"
+    },
+    {
+      "type": "script",
+      "href": "/assets/entry-client.9d21cc98.js"
+    },
+    {
+      "type": "style",
+      "href": "/assets/entry-client.f5120d33.css"
+    }
+  ],
+  "/": [
+    {
+      "type": "script",
+      "href": "/assets/index.d039ee74.js"
+    },
+    {
+      "type": "script",
+      "href": "/assets/entry-client.9d21cc98.js"
+    },
+    {
+      "type": "style",
+      "href": "/assets/entry-client.f5120d33.css"
+    }
+  ],
+  "/(auth)/login": [
+    {
+      "type": "script",
+      "href": "/assets/login.6513b8ee.js"
+    },
+    {
+      "type": "script",
+      "href": "/assets/entry-client.9d21cc98.js"
+    },
+    {
+      "type": "style",
+      "href": "/assets/entry-client.f5120d33.css"
+    },
+    {
+      "type": "script",
+      "href": "/assets/browser.7020d17b.js"
+    }
+  ],
+  "/(auth)/logout": [
+    {
+      "type": "script",
+      "href": "/assets/logout.97e98bec.js"
+    },
+    {
+      "type": "script",
+      "href": "/assets/entry-client.9d21cc98.js"
+    },
+    {
+      "type": "style",
+      "href": "/assets/entry-client.f5120d33.css"
+    },
+    {
+      "type": "script",
+      "href": "/assets/browser.7020d17b.js"
+    }
+  ],
+  "/(auth)/sign-up": [
+    {
+      "type": "script",
+      "href": "/assets/sign-up.d4e431fa.js"
+    },
+    {
+      "type": "script",
+      "href": "/assets/entry-client.9d21cc98.js"
+    },
+    {
+      "type": "style",
+      "href": "/assets/entry-client.f5120d33.css"
+    },
+    {
+      "type": "script",
+      "href": "/assets/browser.7020d17b.js"
+    }
+  ],
+  "/apps/hubspot": [
+    {
+      "type": "script",
+      "href": "/assets/hubspot.d746ace5.js"
+    },
+    {
+      "type": "script",
+      "href": "/assets/entry-client.9d21cc98.js"
+    },
+    {
+      "type": "style",
+      "href": "/assets/entry-client.f5120d33.css"
+    },
+    {
+      "type": "script",
+      "href": "/assets/AppInstall.6af89568.js"
+    }
+  ],
+  "/apps/": [
+    {
+      "type": "script",
+      "href": "/assets/index.c875ac63.js"
+    },
+    {
+      "type": "script",
+      "href": "/assets/entry-client.9d21cc98.js"
+    },
+    {
+      "type": "style",
+      "href": "/assets/entry-client.f5120d33.css"
+    },
+    {
+      "type": "script",
+      "href": "/assets/browser.7020d17b.js"
+    }
+  ],
+  "/apps/shopify": [
+    {
+      "type": "script",
+      "href": "/assets/shopify.60af900b.js"
+    },
+    {
+      "type": "script",
+      "href": "/assets/entry-client.9d21cc98.js"
+    },
+    {
+      "type": "style",
+      "href": "/assets/entry-client.f5120d33.css"
+    },
+    {
+      "type": "script",
+      "href": "/assets/AppInstall.6af89568.js"
+    }
+  ],
+  "/apps/slack": [
+    {
+      "type": "script",
+      "href": "/assets/slack.7d3ac50e.js"
+    },
+    {
+      "type": "script",
+      "href": "/assets/entry-client.9d21cc98.js"
+    },
+    {
+      "type": "style",
+      "href": "/assets/entry-client.f5120d33.css"
+    },
+    {
+      "type": "script",
+      "href": "/assets/AppInstall.6af89568.js"
+    }
+  ],
+  "entry-client": [
+    {
+      "type": "script",
+      "href": "/assets/entry-client.9d21cc98.js"
+    },
+    {
+      "type": "style",
+      "href": "/assets/entry-client.f5120d33.css"
+    }
+  ],
+  "index.html": []
+}

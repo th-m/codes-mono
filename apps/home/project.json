@@ -24,7 +24,7 @@
       }
     },
     "build": {
-      "command": "solid-start build"
+      "command": "npm --prefix apps/home run build"
      },
      "dev": {
        "command": "npm --prefix apps/home run dev"

@@ -4,14 +4,14 @@
     {
       "name": "vite:load-fallback",
       "result": "import {\n  StartServer,\n  createHandler,\n  renderAsync,\n} from \"solid-start/entry-server\";\n\nexport default createHandler(\n  renderAsync((event) => <StartServer event={event} />)\n);\n",
-      "start": 1685057166646,
-      "end": 1685057166646
+      "start": 1685057954190,
+      "end": 1685057954191
     },
     {
       "name": "solid",
       "result": "import { createComponent as _$createComponent } from \"solid-js/web\";\nimport { StartServer, createHandler, renderAsync } from \"solid-start/entry-server\";\nexport default createHandler(renderAsync(event => _$createComponent(StartServer, {\n  event: event\n})));",
-      "start": 1685057166646,
-      "end": 1685057166649,
+      "start": 1685057954191,
+      "end": 1685057954193,
       "order": "pre"
     }
   ]

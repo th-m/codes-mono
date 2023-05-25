@@ -4,14 +4,14 @@
     {
       "name": "vite:load-fallback",
       "result": "import { ErrorBoundary } from \"./ErrorBoundary\";\nexport { ErrorMessage } from \"./ErrorBoundary\";\nexport { ErrorBoundary };\nexport default ErrorBoundary;\n",
-      "start": 1685056935625,
-      "end": 1685056935667
+      "start": 1685057850010,
+      "end": 1685057850064
     },
     {
       "name": "solid",
       "result": "import { ErrorBoundary } from \"./ErrorBoundary\";\nexport { ErrorMessage } from \"./ErrorBoundary\";\nexport { ErrorBoundary };\nexport default ErrorBoundary;",
-      "start": 1685056935667,
-      "end": 1685056935668,
+      "start": 1685057850064,
+      "end": 1685057850065,
       "order": "pre"
     }
   ]

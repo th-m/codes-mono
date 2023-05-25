@@ -4,14 +4,14 @@
     {
       "name": "vite:load-fallback",
       "result": "export * from \"./components\";\nexport * from \"./integration\";\nexport * from \"./lifecycle\";\nexport { useRouteData, useHref, useIsRouting, useLocation, useMatch, useNavigate, useParams, useResolvedPath, useSearchParams, useBeforeLeave, } from \"./routing\";\nexport { mergeSearchString as _mergeSearchString } from \"./utils\";\n",
-      "start": 1685057166671,
-      "end": 1685057166686
+      "start": 1685057954215,
+      "end": 1685057954251
     },
     {
       "name": "solid",
       "result": "export * from \"./components\";\nexport * from \"./integration\";\nexport * from \"./lifecycle\";\nexport { useRouteData, useHref, useIsRouting, useLocation, useMatch, useNavigate, useParams, useResolvedPath, useSearchParams, useBeforeLeave } from \"./routing\";\nexport { mergeSearchString as _mergeSearchString } from \"./utils\";",
-      "start": 1685057166686,
-      "end": 1685057166687,
+      "start": 1685057954251,
+      "end": 1685057954252,
       "order": "pre"
     }
   ]

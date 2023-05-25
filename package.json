@@ -4,7 +4,8 @@
   "license": "MIT",
   "scripts": {
     "dev:blog": "npx nx run blog:dev --verbose",
-    "dev:home": "npx nx run home:dev --verbose"
+    "dev:home": "npx nx run home:dev --verbose",
+    "build:home": "npx nx run home:build --verbose"
   },
   "private": true,
   "dependencies": {

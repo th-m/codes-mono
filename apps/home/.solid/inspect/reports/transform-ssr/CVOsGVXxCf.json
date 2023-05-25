@@ -4,14 +4,14 @@
     {
       "name": "vite:load-fallback",
       "result": "// @refresh reload\nimport { Suspense, createSignal, createResource } from \"solid-js\";\nimport {\n  useLocation,\n  A,\n  Body,\n  ErrorBoundary,\n  FileRoutes,\n  Head,\n  Html,\n  Meta,\n  Routes,\n  Scripts,\n  Title,\n} from \"solid-start\";\nimport \"./root.css\";\nimport NavBar from \"./components/NavBar\";\n\nexport default function Root() {\n  return (\n    <Html lang=\"en\" class=\"m-0 h-full\">\n      <Head>\n        <Title>SolidStart - With TailwindCSS</Title>\n        <Meta charset=\"utf-8\" />\n        <Meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n      </Head>\n      <Body class=\"m-0 h-full\">\n        <Suspense>\n          <ErrorBoundary>\n            <NavBar />\n            <Routes>\n              <FileRoutes />\n            </Routes>\n          </ErrorBoundary>\n        </Suspense>\n        <Scripts />\n      </Body>\n    </Html>\n  );\n}\n",
-      "start": 1685057166671,
-      "end": 1685057166718
+      "start": 1685057954215,
+      "end": 1685057954263
     },
     {
       "name": "solid",
       "result": "import { createComponent as _$createComponent } from \"solid-js/web\";\n// @refresh reload\nimport { Suspense } from \"solid-js\";\nimport FileRoutes from \"solid-start/root/FileRoutes\";\nimport { Body, ErrorBoundary, Head, Html, Meta, Routes, Scripts, Title } from \"solid-start\";\nimport \"./root.css\";\nimport NavBar from \"./components/NavBar\";\nexport default function Root() {\n  return _$createComponent(Html, {\n    lang: \"en\",\n    \"class\": \"m-0 h-full\",\n    get children() {\n      return [_$createComponent(Head, {\n        get children() {\n          return [_$createComponent(Title, {\n            children: \"SolidStart - With TailwindCSS\"\n          }), _$createComponent(Meta, {\n            charset: \"utf-8\"\n          }), _$createComponent(Meta, {\n            name: \"viewport\",\n            content: \"width=device-width, initial-scale=1\"\n          })];\n        }\n      }), _$createComponent(Body, {\n        \"class\": \"m-0 h-full\",\n        get children() {\n          return [_$createComponent(Suspense, {\n            get children() {\n              return _$createComponent(ErrorBoundary, {\n                get children() {\n                  return [_$createComponent(NavBar, {}), _$createComponent(Routes, {\n                    get children() {\n                      return _$createComponent(FileRoutes, {});\n                    }\n                  })];\n                }\n              });\n            }\n          }), _$createComponent(Scripts, {})];\n        }\n      })];\n    }\n  });\n}",
-      "start": 1685057166718,
-      "end": 1685057166721,
+      "start": 1685057954263,
+      "end": 1685057954266,
       "order": "pre"
     }
   ]
