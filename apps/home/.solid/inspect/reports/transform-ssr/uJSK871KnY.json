@@ -4,14 +4,14 @@
     {
       "name": "vite:load-fallback",
       "result": "export * from \"./render\";\n// server-side only exports\nexport { composeMiddleware, createHandler, default as StartServer } from \"./StartServer\";\nexport type { Middleware, MiddlewareFn, MiddlewareInput } from \"./StartServer\";\n",
-      "start": 1685056431205,
-      "end": 1685056431205
+      "start": 1685057166654,
+      "end": 1685057166655
     },
     {
       "name": "vite:esbuild",
       "result": "export * from \"./render\";\nexport { composeMiddleware, createHandler, default as StartServer } from \"./StartServer\";\n",
-      "start": 1685056431205,
-      "end": 1685056431207,
+      "start": 1685057166655,
+      "end": 1685057166657,
       "order": "normal"
     }
   ]

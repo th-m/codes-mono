@@ -4,14 +4,14 @@
     {
       "name": "vite:load-fallback",
       "result": "import { createClient } from \"@supabase/supabase-js\";\nimport invariant from \"tiny-invariant\";\n\nexport type User = { id: string; email: string };\n\n// Abstract this away\nconst supabaseUrl = process.env.SUPABASE_URL;\nconst supabaseSecret = process.env.SUPABASE_SECRET;\n\ninvariant(\n  supabaseUrl,\n  \"SUPABASE_URL must be set in your environment variables.\"\n);\ninvariant(\n  supabaseSecret,\n  \"SUPABASE_SECRET must be set in your environment variables.\"\n);\n\nexport const supabase = createClient(supabaseUrl, supabaseSecret);\n\nexport async function createUser(email: string, password: string) {\n  const { data, error } = await supabase.auth.signUp({\n    email,\n    password,\n  });\n\n  const session = data?.session;\n\n  return {session, error};\n}\n\nexport async function getProfileById(id: string) {\n  const { data, error } = await supabase\n    .from(\"profiles\")\n    .select(\"email, id\")\n    .eq(\"id\", id)\n    .single();\n\n  if (error) {\n    console.log(error)\n    return null};\n  if (data) return { id: data.id, email: data.email };\n}\n\nexport async function getProfileByEmail(email?: string) {\n  const { data, error } = await supabase\n    .from(\"profiles\")\n    .select(\"email, id\")\n    .eq(\"email\", email)\n    .single();\n\n  if (error) return null;\n  if (data) return data;\n}\n\nexport async function verifyLogin(email: string, password: string) {\n  const resp = await supabase.auth.signInWithPassword({\n    email,\n    password,\n  });\n  const error = resp.error;\n  // const user = resp.data?.user;\n  if (error) return undefined;\n  return resp.data.session;\n  // const profile = await getProfileByEmail(user?.email);\n\n  // return profile;\n}\n",
-      "start": 1685056431307,
-      "end": 1685056431456
+      "start": 1685057166783,
+      "end": 1685057166879
     },
     {
       "name": "vite:esbuild",
       "result": "import { createClient } from \"@supabase/supabase-js\";\nimport invariant from \"tiny-invariant\";\nconst supabaseUrl = process.env.SUPABASE_URL;\nconst supabaseSecret = process.env.SUPABASE_SECRET;\ninvariant(\n  supabaseUrl,\n  \"SUPABASE_URL must be set in your environment variables.\"\n);\ninvariant(\n  supabaseSecret,\n  \"SUPABASE_SECRET must be set in your environment variables.\"\n);\nexport const supabase = createClient(supabaseUrl, supabaseSecret);\nexport async function createUser(email, password) {\n  const { data, error } = await supabase.auth.signUp({\n    email,\n    password\n  });\n  const session = data?.session;\n  return { session, error };\n}\nexport async function getProfileById(id) {\n  const { data, error } = await supabase.from(\"profiles\").select(\"email, id\").eq(\"id\", id).single();\n  if (error) {\n    console.log(error);\n    return null;\n  }\n  ;\n  if (data)\n    return { id: data.id, email: data.email };\n}\nexport async function getProfileByEmail(email) {\n  const { data, error } = await supabase.from(\"profiles\").select(\"email, id\").eq(\"email\", email).single();\n  if (error)\n    return null;\n  if (data)\n    return data;\n}\nexport async function verifyLogin(email, password) {\n  const resp = await supabase.auth.signInWithPassword({\n    email,\n    password\n  });\n  const error = resp.error;\n  if (error)\n    return void 0;\n  return resp.data.session;\n}\n",
-      "start": 1685056431456,
-      "end": 1685056431482,
+      "start": 1685057166879,
+      "end": 1685057166891,
       "order": "normal"
     }
   ]

@@ -4,21 +4,21 @@
     {
       "name": "vite:load-fallback",
       "result": "import { A } from \"solid-start\";\nimport Counter from \"~/components/Counter\";\n\nexport default function About() {\n  return (\n    <main class=\"text-center mx-auto text-gray-700 p-4\">\n      <h1 class=\"max-6-xs text-6xl text-sky-700 font-thin uppercase my-16\">\n        About Page\n      </h1>\n      <Counter />\n      <p class=\"mt-8\">\n        Visit{\" \"}\n        <a\n          href=\"https://solidjs.com\"\n          target=\"_blank\"\n          class=\"text-sky-600 hover:underline\"\n        >\n          solidjs.com\n        </a>{\" \"}\n        to learn how to build Solid apps.\n      </p>\n      <p class=\"my-4\">\n        <A href=\"/\" class=\"text-sky-600 hover:underline\">\n          Home\n        </A>\n        {\" - \"}\n        <span>About Page</span>\n      </p>\n    </main>\n  );\n}\n",
-      "start": 1685056431259,
-      "end": 1685056431281
+      "start": 1685057166718,
+      "end": 1685057166756
     },
     {
       "name": "solid-start-file-system-router",
       "result": "import { ssr as _$ssr } from \"solid-js/web\";\nimport { escape as _$escape } from \"solid-js/web\";\nimport { createComponent as _$createComponent } from \"solid-js/web\";\nimport { ssrHydrationKey as _$ssrHydrationKey } from \"solid-js/web\";\nconst _tmpl$ = [\"<main\", \" class=\\\"text-center mx-auto text-gray-700 p-4\\\"><h1 class=\\\"max-6-xs text-6xl text-sky-700 font-thin uppercase my-16\\\">About Page</h1><!--#-->\", \"<!--/--><p class=\\\"mt-8\\\">Visit <a href=\\\"https://solidjs.com\\\" target=\\\"_blank\\\" class=\\\"text-sky-600 hover:underline\\\">solidjs.com</a> to learn how to build Solid apps.</p><p class=\\\"my-4\\\"><!--#-->\", \"<!--/--> - <span>About Page</span></p></main>\"];\nimport { A } from \"solid-start\";\nimport Counter from \"~/components/Counter\";\nexport default function About() {\n  return _$ssr(_tmpl$, _$ssrHydrationKey(), _$escape(_$createComponent(Counter, {})), _$escape(_$createComponent(A, {\n    href: \"/\",\n    \"class\": \"text-sky-600 hover:underline\",\n    children: \"Home\"\n  })));\n}",
-      "start": 1685056431281,
-      "end": 1685056431283,
+      "start": 1685057166756,
+      "end": 1685057166758,
       "order": "pre"
     },
     {
       "name": "solid",
       "result": "import { ssr as _$ssr } from \"solid-js/web\";\nimport { escape as _$escape } from \"solid-js/web\";\nimport { createComponent as _$createComponent } from \"solid-js/web\";\nimport { ssrHydrationKey as _$ssrHydrationKey } from \"solid-js/web\";\nconst _tmpl$ = [\"<main\", \" class=\\\"text-center mx-auto text-gray-700 p-4\\\"><h1 class=\\\"max-6-xs text-6xl text-sky-700 font-thin uppercase my-16\\\">About Page</h1><!--#-->\", \"<!--/--><p class=\\\"mt-8\\\">Visit <a href=\\\"https://solidjs.com\\\" target=\\\"_blank\\\" class=\\\"text-sky-600 hover:underline\\\">solidjs.com</a> to learn how to build Solid apps.</p><p class=\\\"my-4\\\"><!--#-->\", \"<!--/--> - <span>About Page</span></p></main>\"];\nimport { A } from \"solid-start\";\nimport Counter from \"~/components/Counter\";\nexport default function About() {\n  return _$ssr(_tmpl$, _$ssrHydrationKey(), _$escape(_$createComponent(Counter, {})), _$escape(_$createComponent(A, {\n    href: \"/\",\n    \"class\": \"text-sky-600 hover:underline\",\n    children: \"Home\"\n  })));\n}",
-      "start": 1685056431283,
-      "end": 1685056431285,
+      "start": 1685057166758,
+      "end": 1685057166759,
       "order": "pre"
     }
   ]

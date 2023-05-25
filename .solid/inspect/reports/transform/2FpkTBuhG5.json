@@ -4,14 +4,14 @@
     {
       "name": "vite:load-fallback",
       "result": "export { default as mount } from \"./mount\";\nexport { default as StartClient } from \"./StartClient\";\n",
-      "start": 1685056211567,
-      "end": 1685056211567
+      "start": 1685056935464,
+      "end": 1685056935465
     },
     {
       "name": "solid",
       "result": "export { default as mount } from \"./mount\";\nexport { default as StartClient } from \"./StartClient\";",
-      "start": 1685056211567,
-      "end": 1685056211570,
+      "start": 1685056935465,
+      "end": 1685056935468,
       "order": "pre"
     }
   ]

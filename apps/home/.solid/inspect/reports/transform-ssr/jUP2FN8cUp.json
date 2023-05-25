@@ -4,14 +4,14 @@
     {
       "name": "vite:load-fallback",
       "result": "import { createMemo } from \"solid-js\";\nimport { A } from \"solid-start\";\nimport Counter from \"~/components/Counter\";\nimport { parseCookie, useServerContext } from \"solid-start\";\nimport { isServer } from \"solid-js/web\";\n\nexport default function LoginButton() {\n//   const event = useServerContext();\n//   const cookie = () =>\n//     parseCookie(\n//       isServer ? event.request.headers.get(\"cookie\") ?? \"\" : document.cookie\n//     );\n//   const myValue = createMemo(() => {\n//     const v = cookie();\n//     console.log(v);\n//     return v;\n//   });\n\n  // const fullName = createMemo(() => {\n  //     const user = auth?.user()\n  //     console.log(user);\n  //     return `${user}`\n  // })\n  // console.log(fullName)\n  // if(auth?.isAuthenticated()){\n  //     return (\n  //         <p>\n  //             you are in\n  //         </p>\n  //     )\n  // }\n  return (\n    <A href=\"/login\">Login</A>\n    // <button onClick={() => auth?.loginWithRedirect()} type=\"button\" class=\"text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800\">Login</button>\n    // <button type=\"button\" class=\"text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800\">Login</button>\n  );\n}\n",
-      "start": 1685056431449,
-      "end": 1685056431476
+      "start": 1685057166873,
+      "end": 1685057166912
     },
     {
       "name": "solid",
       "result": "import { createComponent as _$createComponent } from \"solid-js/web\";\nimport \"solid-js\";\nimport { A } from \"solid-start\";\nimport \"~/components/Counter\";\nimport \"solid-start\";\nimport \"solid-js/web\";\nexport default function LoginButton() {\n  //   const event = useServerContext();\n  //   const cookie = () =>\n  //     parseCookie(\n  //       isServer ? event.request.headers.get(\"cookie\") ?? \"\" : document.cookie\n  //     );\n  //   const myValue = createMemo(() => {\n  //     const v = cookie();\n  //     console.log(v);\n  //     return v;\n  //   });\n\n  // const fullName = createMemo(() => {\n  //     const user = auth?.user()\n  //     console.log(user);\n  //     return `${user}`\n  // })\n  // console.log(fullName)\n  // if(auth?.isAuthenticated()){\n  //     return (\n  //         <p>\n  //             you are in\n  //         </p>\n  //     )\n  // }\n  return _$createComponent(A, {\n    href: \"/login\",\n    children: \"Login\"\n  }) // <button onClick={() => auth?.loginWithRedirect()} type=\"button\" class=\"text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800\">Login</button>\n  // <button type=\"button\" class=\"text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800\">Login</button>\n  ;\n}",
-      "start": 1685056431476,
-      "end": 1685056431478,
+      "start": 1685057166912,
+      "end": 1685057166914,
       "order": "pre"
     }
   ]

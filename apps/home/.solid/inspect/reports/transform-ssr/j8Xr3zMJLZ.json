@@ -4,14 +4,14 @@
     {
       "name": "vite:load-fallback",
       "result": "import { APIEvent, json } from \"solid-start/api\";\n\nexport async function GET() {\n  return new Response(\"Hello Slack\");\n}\n\nexport async function POST(e: APIEvent) {\n  const data = await e.request.json();\n  return json(data);\n}\n\nexport async function PATCH() {\n  // ...\n}\n\nexport async function DELETE() {\n  // ...\n}\n",
-      "start": 1685056431481,
-      "end": 1685056431524
+      "start": 1685057167019,
+      "end": 1685057167038
     },
     {
       "name": "vite:esbuild",
       "result": "import { json } from \"solid-start/api\";\nexport async function GET() {\n  return new Response(\"Hello Slack\");\n}\nexport async function POST(e) {\n  const data = await e.request.json();\n  return json(data);\n}\nexport async function PATCH() {\n}\nexport async function DELETE() {\n}\n",
-      "start": 1685056431524,
-      "end": 1685056431555,
+      "start": 1685057167038,
+      "end": 1685057167045,
       "order": "normal"
     }
   ]

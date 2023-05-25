@@ -4,14 +4,14 @@
     {
       "name": "vite:load-fallback",
       "result": "// @refresh reload\nimport { Suspense } from \"solid-js\";\nimport { Body, ErrorBoundary, FileRoutes, Head, Html, Meta, Routes, Scripts } from \"../\";\n\nexport default function Root() {\n  return (\n    <Html lang=\"en\">\n      <Head>\n        <Meta charset=\"utf-8\" />\n        <Meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n      </Head>\n      <Body>\n        <Suspense>\n          <ErrorBoundary>\n            <Routes>\n              <FileRoutes />\n            </Routes>\n          </ErrorBoundary>\n        </Suspense>\n        <Scripts />\n      </Body>\n    </Html>\n  );\n}\n",
-      "start": 1685056211675,
-      "end": 1685056211710
+      "start": 1685056935574,
+      "end": 1685056935601
     },
     {
       "name": "solid",
       "result": "import { createComponent as _$createComponent } from \"solid-js/web\";\n// @refresh reload\nimport { Suspense } from \"solid-js\";\nimport { Body, ErrorBoundary, FileRoutes, Head, Html, Meta, Routes, Scripts } from \"../\";\nexport default function Root() {\n  return _$createComponent(Html, {\n    lang: \"en\",\n    get children() {\n      return [_$createComponent(Head, {\n        get children() {\n          return [_$createComponent(Meta, {\n            charset: \"utf-8\"\n          }), _$createComponent(Meta, {\n            name: \"viewport\",\n            content: \"width=device-width, initial-scale=1\"\n          })];\n        }\n      }), _$createComponent(Body, {\n        get children() {\n          return [_$createComponent(Suspense, {\n            get children() {\n              return _$createComponent(ErrorBoundary, {\n                get children() {\n                  return _$createComponent(Routes, {\n                    get children() {\n                      return _$createComponent(FileRoutes, {});\n                    }\n                  });\n                }\n              });\n            }\n          }), _$createComponent(Scripts, {})];\n        }\n      })];\n    }\n  });\n}",
-      "start": 1685056211710,
-      "end": 1685056211714,
+      "start": 1685056935601,
+      "end": 1685056935606,
       "order": "pre"
     }
   ]

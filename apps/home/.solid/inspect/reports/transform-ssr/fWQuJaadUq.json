@@ -4,14 +4,14 @@
     {
       "name": "vite:load-fallback",
       "result": "import { APIEvent, json } from \"solid-start/api\";\nimport { getUser } from \"~/models/session.server\";\n\nexport async function GET(e:APIEvent) {\n  const d = await getUser(e.request)\n  return json(d);\n}\n\n// export async function POST(e: APIEvent) {\n//   // const data = await e.request.json();\n//   const d = await getUser(e.request)\n//   return json(d);\n// }\n\n// export async function PATCH() {\n//   // ...\n// }\n\n// export async function DELETE() {\n//   // ...\n// }\n",
-      "start": 1685056431481,
-      "end": 1685056431524
+      "start": 1685057167019,
+      "end": 1685057167038
     },
     {
       "name": "vite:esbuild",
       "result": "import { json } from \"solid-start/api\";\nimport { getUser } from \"~/models/session.server\";\nexport async function GET(e) {\n  const d = await getUser(e.request);\n  return json(d);\n}\n",
-      "start": 1685056431524,
-      "end": 1685056431555,
+      "start": 1685057167038,
+      "end": 1685057167045,
       "order": "normal"
     }
   ]
