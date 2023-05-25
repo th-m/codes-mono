@@ -1,5 +1,5 @@
 import { isServer, createComponent, spread, escape, delegateEvents, ssrElement, mergeProps as mergeProps$1, ssr, ssrHydrationKey, useAssets, ssrAttribute, HydrationScript, NoHydration, renderToStringAsync } from 'solid-js/web';
-import { createContext, sharedConfig, createUniqueId, useContext, createRenderEffect, onCleanup, createSignal, getOwner, runWithOwner, createMemo, createComponent as createComponent$1, untrack, on, startTransition, resetErrorBoundaries, children, createRoot, Show, mergeProps, splitProps, createEffect, batch, ErrorBoundary as ErrorBoundary$1, onMount, Suspense } from 'solid-js';
+import { createContext, sharedConfig, createUniqueId, useContext, createRenderEffect, onCleanup, createSignal, getOwner, runWithOwner, createMemo, untrack, createComponent as createComponent$1, on, startTransition, resetErrorBoundaries, children, createRoot, Show, mergeProps, splitProps, createEffect, batch, ErrorBoundary as ErrorBoundary$1, onMount, Suspense } from 'solid-js';
 import invariant$1 from 'tiny-invariant';
 import { createClient } from '@supabase/supabase-js';
 
@@ -1207,9 +1207,7 @@ createContext();
 
 const A = A$1;
 const Routes = Routes$1;
-Outlet;
 const useLocation = useLocation$1;
-useNavigate;
 
 const resources = new Set();
 function refetchRouteData(key) {
@@ -1785,7 +1783,7 @@ const createCookieSessionStorageFactory = (createCookie) => ({ cookie: cookieArg
     async destroySession(_session, options) {
       return cookie.serialize("", {
         ...options,
-        expires: new Date(0)
+        expires: /* @__PURE__ */ new Date(0)
       });
     }
   };
@@ -2080,6 +2078,7 @@ const sessionStorage = createCookieSessionStorage({
     sameSite: "lax",
     path: "/",
     maxAge: 60 * 60 * 24 * 30,
+    // 30 days
     httpOnly: true
   }
 });
@@ -2720,6 +2719,7 @@ function Slack() {
 }
 
 /// <reference path="../server/types.tsx" />
+
 const fileRoutes = [{
   component: NotFound,
   path: "/*404"

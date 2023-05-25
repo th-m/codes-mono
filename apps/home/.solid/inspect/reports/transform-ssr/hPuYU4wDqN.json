@@ -4,21 +4,21 @@
     {
       "name": "vite:load-fallback",
       "result": "import AppInstall from \"~/components/AppInstall\";\n\nexport default function Slack() {\n  return (\n    <main class=\"text-center mx-auto text-gray-700 p-4\">\n      <AppInstall app={\"hubspot\"} />\n    </main>\n  );\n}\n",
-      "start": 1685057954260,
-      "end": 1685057954315
+      "start": 1685058358762,
+      "end": 1685058358843
     },
     {
       "name": "solid-start-file-system-router",
       "result": "import { ssr as _$ssr } from \"solid-js/web\";\nimport { escape as _$escape } from \"solid-js/web\";\nimport { createComponent as _$createComponent } from \"solid-js/web\";\nimport { ssrHydrationKey as _$ssrHydrationKey } from \"solid-js/web\";\nconst _tmpl$ = [\"<main\", \" class=\\\"text-center mx-auto text-gray-700 p-4\\\">\", \"</main>\"];\nimport AppInstall from \"~/components/AppInstall\";\nexport default function Slack() {\n  return _$ssr(_tmpl$, _$ssrHydrationKey(), _$escape(_$createComponent(AppInstall, {\n    app: \"hubspot\"\n  })));\n}",
-      "start": 1685057954315,
-      "end": 1685057954320,
+      "start": 1685058358843,
+      "end": 1685058358845,
       "order": "pre"
     },
     {
       "name": "solid",
       "result": "import { ssr as _$ssr } from \"solid-js/web\";\nimport { escape as _$escape } from \"solid-js/web\";\nimport { createComponent as _$createComponent } from \"solid-js/web\";\nimport { ssrHydrationKey as _$ssrHydrationKey } from \"solid-js/web\";\nconst _tmpl$ = [\"<main\", \" class=\\\"text-center mx-auto text-gray-700 p-4\\\">\", \"</main>\"];\nimport AppInstall from \"~/components/AppInstall\";\nexport default function Slack() {\n  return _$ssr(_tmpl$, _$ssrHydrationKey(), _$escape(_$createComponent(AppInstall, {\n    app: \"hubspot\"\n  })));\n}",
-      "start": 1685057954320,
-      "end": 1685057954322,
+      "start": 1685058358845,
+      "end": 1685058358846,
       "order": "pre"
     }
   ]

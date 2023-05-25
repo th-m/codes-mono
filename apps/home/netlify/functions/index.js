@@ -20920,182 +20920,182 @@ if (globalThis.crypto != require$$0$4.webcrypto) {
 }
 
 var manifest = {
-	"/*404": [
-	{
-		type: "script",
-		href: "/assets/_...404_.8a143280.js"
-	},
-	{
-		type: "script",
-		href: "/assets/entry-client.9d21cc98.js"
-	},
-	{
-		type: "style",
-		href: "/assets/entry-client.f5120d33.css"
-	}
-],
-	"/about": [
-	{
-		type: "script",
-		href: "/assets/about.20b499a8.js"
-	},
-	{
-		type: "script",
-		href: "/assets/entry-client.9d21cc98.js"
-	},
-	{
-		type: "style",
-		href: "/assets/entry-client.f5120d33.css"
-	}
-],
-	"/": [
-	{
-		type: "script",
-		href: "/assets/index.d039ee74.js"
-	},
-	{
-		type: "script",
-		href: "/assets/entry-client.9d21cc98.js"
-	},
-	{
-		type: "style",
-		href: "/assets/entry-client.f5120d33.css"
-	}
-],
 	"/(auth)/login": [
 	{
 		type: "script",
-		href: "/assets/login.6513b8ee.js"
+		href: "/assets/login-9409e32b.js"
 	},
 	{
 		type: "script",
-		href: "/assets/entry-client.9d21cc98.js"
+		href: "/assets/entry-client-96f0c3bd.js"
 	},
 	{
 		type: "style",
-		href: "/assets/entry-client.f5120d33.css"
+		href: "/assets/entry-client-f5120d33.css"
 	},
 	{
 		type: "script",
-		href: "/assets/browser.7020d17b.js"
+		href: "/assets/browser-b4a9accc.js"
 	}
 ],
 	"/(auth)/logout": [
 	{
 		type: "script",
-		href: "/assets/logout.97e98bec.js"
+		href: "/assets/logout-e77d43fb.js"
 	},
 	{
 		type: "script",
-		href: "/assets/entry-client.9d21cc98.js"
+		href: "/assets/entry-client-96f0c3bd.js"
 	},
 	{
 		type: "style",
-		href: "/assets/entry-client.f5120d33.css"
+		href: "/assets/entry-client-f5120d33.css"
 	},
 	{
 		type: "script",
-		href: "/assets/browser.7020d17b.js"
+		href: "/assets/browser-b4a9accc.js"
 	}
 ],
 	"/(auth)/sign-up": [
 	{
 		type: "script",
-		href: "/assets/sign-up.d4e431fa.js"
+		href: "/assets/sign-up-16272ddd.js"
 	},
 	{
 		type: "script",
-		href: "/assets/entry-client.9d21cc98.js"
+		href: "/assets/entry-client-96f0c3bd.js"
 	},
 	{
 		type: "style",
-		href: "/assets/entry-client.f5120d33.css"
+		href: "/assets/entry-client-f5120d33.css"
 	},
 	{
 		type: "script",
-		href: "/assets/browser.7020d17b.js"
+		href: "/assets/browser-b4a9accc.js"
+	}
+],
+	"/*404": [
+	{
+		type: "script",
+		href: "/assets/_...404_-2f6ae281.js"
+	},
+	{
+		type: "script",
+		href: "/assets/entry-client-96f0c3bd.js"
+	},
+	{
+		type: "style",
+		href: "/assets/entry-client-f5120d33.css"
+	}
+],
+	"/about": [
+	{
+		type: "script",
+		href: "/assets/about-4635d48b.js"
+	},
+	{
+		type: "script",
+		href: "/assets/entry-client-96f0c3bd.js"
+	},
+	{
+		type: "style",
+		href: "/assets/entry-client-f5120d33.css"
 	}
 ],
 	"/apps/hubspot": [
 	{
 		type: "script",
-		href: "/assets/hubspot.d746ace5.js"
+		href: "/assets/hubspot-1c4f50a6.js"
 	},
 	{
 		type: "script",
-		href: "/assets/entry-client.9d21cc98.js"
+		href: "/assets/entry-client-96f0c3bd.js"
 	},
 	{
 		type: "style",
-		href: "/assets/entry-client.f5120d33.css"
+		href: "/assets/entry-client-f5120d33.css"
 	},
 	{
 		type: "script",
-		href: "/assets/AppInstall.6af89568.js"
+		href: "/assets/AppInstall-028c9e0d.js"
 	}
 ],
 	"/apps/": [
 	{
 		type: "script",
-		href: "/assets/index.c875ac63.js"
+		href: "/assets/index-47b32c20.js"
 	},
 	{
 		type: "script",
-		href: "/assets/entry-client.9d21cc98.js"
+		href: "/assets/entry-client-96f0c3bd.js"
 	},
 	{
 		type: "style",
-		href: "/assets/entry-client.f5120d33.css"
+		href: "/assets/entry-client-f5120d33.css"
 	},
 	{
 		type: "script",
-		href: "/assets/browser.7020d17b.js"
+		href: "/assets/browser-b4a9accc.js"
 	}
 ],
 	"/apps/shopify": [
 	{
 		type: "script",
-		href: "/assets/shopify.60af900b.js"
+		href: "/assets/shopify-e06031e5.js"
 	},
 	{
 		type: "script",
-		href: "/assets/entry-client.9d21cc98.js"
+		href: "/assets/entry-client-96f0c3bd.js"
 	},
 	{
 		type: "style",
-		href: "/assets/entry-client.f5120d33.css"
+		href: "/assets/entry-client-f5120d33.css"
 	},
 	{
 		type: "script",
-		href: "/assets/AppInstall.6af89568.js"
+		href: "/assets/AppInstall-028c9e0d.js"
 	}
 ],
 	"/apps/slack": [
 	{
 		type: "script",
-		href: "/assets/slack.7d3ac50e.js"
+		href: "/assets/slack-21a30539.js"
 	},
 	{
 		type: "script",
-		href: "/assets/entry-client.9d21cc98.js"
+		href: "/assets/entry-client-96f0c3bd.js"
 	},
 	{
 		type: "style",
-		href: "/assets/entry-client.f5120d33.css"
+		href: "/assets/entry-client-f5120d33.css"
 	},
 	{
 		type: "script",
-		href: "/assets/AppInstall.6af89568.js"
+		href: "/assets/AppInstall-028c9e0d.js"
+	}
+],
+	"/": [
+	{
+		type: "script",
+		href: "/assets/index-161b49a9.js"
+	},
+	{
+		type: "script",
+		href: "/assets/entry-client-96f0c3bd.js"
+	},
+	{
+		type: "style",
+		href: "/assets/entry-client-f5120d33.css"
 	}
 ],
 	"entry-client": [
 	{
 		type: "script",
-		href: "/assets/entry-client.9d21cc98.js"
+		href: "/assets/entry-client-96f0c3bd.js"
 	},
 	{
 		type: "style",
-		href: "/assets/entry-client.f5120d33.css"
+		href: "/assets/entry-client-f5120d33.css"
 	}
 ],
 	"index.html": [
@@ -112414,7 +112414,7 @@ class GoTrueAdminApi {
 }
 
 // Generated by genversion.
-const version = '2.27.2';
+const version = '2.27.1';
 
 const GOTRUE_URL = 'http://localhost:9999';
 const STORAGE_KEY = 'supabase.auth.token';
@@ -115768,7 +115768,7 @@ const createCookieSessionStorageFactory = (createCookie) => ({ cookie: cookieArg
     async destroySession(_session, options) {
       return cookie.serialize("", {
         ...options,
-        expires: new Date(0)
+        expires: /* @__PURE__ */ new Date(0)
       });
     }
   };
@@ -116063,6 +116063,7 @@ const sessionStorage = createCookieSessionStorage({
     sameSite: "lax",
     path: "/",
     maxAge: 60 * 60 * 24 * 30,
+    // 30 days
     httpOnly: true
   }
 });
@@ -116662,6 +116663,7 @@ function Slack() {
 }
 
 /// <reference path="../server/types.tsx" />
+
 const fileRoutes = [{
   component: NotFound,
   path: "/*404"

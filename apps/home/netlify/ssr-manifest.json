@@ -1,80 +1,104 @@
 {
-  "node_modules/solid-js/dist/solid.js": [],
-  "node_modules/solid-js/web/dist/web.js": [],
-  "\u0000vite/preload-helper": [],
-  "node_modules/solid-start/entry-client/mount.tsx": [],
-  "node_modules/@solidjs/meta/dist/index.jsx": [],
-  "node_modules/@solidjs/router/dist/integration.js": [],
-  "node_modules/@solidjs/router/dist/lifecycle.js": [],
-  "node_modules/@solidjs/router/dist/utils.js": [],
-  "node_modules/@solidjs/router/dist/routing.js": [],
-  "node_modules/@solidjs/router/dist/components.jsx": [],
-  "node_modules/solid-start/root/FileRoutes.tsx": [],
-  "node_modules/solid-start/server/ServerContext.tsx": [],
-  "node_modules/solid-start/router.tsx": [],
-  "node_modules/solid-start/server/types.tsx": [],
-  "node_modules/solid-start/error-boundary/ErrorBoundary.tsx": [],
-  "node_modules/solid-start/root/Scripts.tsx": [],
-  "node_modules/solid-start/root/Document.tsx": [],
-  "src/root.css": [],
-  "src/components/LoginButton.tsx": [],
-  "src/models/users.client.ts": [],
-  "src/components/NavBar.tsx": [],
-  "src/root.tsx": [],
-  "node_modules/solid-start/entry-client/StartClient.tsx": [],
-  "src/entry-client.tsx": [],
-  "src/routes/[...404].tsx": [
-    "/assets/_...404_.8a143280.js"
+  "\u0000vite/preload-helper": [
   ],
-  "src/components/Counter.tsx": [
-    "/assets/about.20b499a8.js"
+  "node_modules/@solidjs/meta/dist/index.jsx": [
   ],
-  "src/routes/about.tsx": [
-    "/assets/about.20b499a8.js"
+  "node_modules/@solidjs/router/dist/components.jsx": [
   ],
-  "src/routes/index.tsx": [
-    "/assets/index.d039ee74.js"
+  "node_modules/@solidjs/router/dist/integration.js": [
   ],
-  "src/routes/(auth)/login.tsx": [
-    "/assets/login.6513b8ee.js"
+  "node_modules/@solidjs/router/dist/lifecycle.js": [
   ],
-  "node_modules/solid-start/data/FormError.tsx": [
-    "/assets/browser.7020d17b.js"
+  "node_modules/@solidjs/router/dist/routing.js": [
+  ],
+  "node_modules/@solidjs/router/dist/utils.js": [
+  ],
+  "node_modules/solid-js/dist/solid.js": [
+  ],
+  "node_modules/solid-js/web/dist/web.js": [
   ],
   "node_modules/solid-start/data/Form.tsx": [
-    "/assets/browser.7020d17b.js"
+    "/assets/browser-b4a9accc.js"
   ],
-  "node_modules/solid-start/server/responses.ts": [
-    "/assets/browser.7020d17b.js"
-  ],
-  "node_modules/solid-start/data/createRouteData.tsx": [
-    "/assets/browser.7020d17b.js"
+  "node_modules/solid-start/data/FormError.tsx": [
+    "/assets/browser-b4a9accc.js"
   ],
   "node_modules/solid-start/data/createRouteAction.tsx": [
-    "/assets/browser.7020d17b.js"
+    "/assets/browser-b4a9accc.js"
+  ],
+  "node_modules/solid-start/data/createRouteData.tsx": [
+    "/assets/browser-b4a9accc.js"
+  ],
+  "node_modules/solid-start/entry-client/StartClient.tsx": [
+  ],
+  "node_modules/solid-start/entry-client/mount.tsx": [
+  ],
+  "node_modules/solid-start/error-boundary/ErrorBoundary.tsx": [
+  ],
+  "node_modules/solid-start/root/Document.tsx": [
+  ],
+  "node_modules/solid-start/root/FileRoutes.tsx": [
+  ],
+  "node_modules/solid-start/root/Scripts.tsx": [
+  ],
+  "node_modules/solid-start/router.tsx": [
+  ],
+  "node_modules/solid-start/server/ServerContext.tsx": [
+  ],
+  "node_modules/solid-start/server/responses.ts": [
+    "/assets/browser-b4a9accc.js"
   ],
   "node_modules/solid-start/server/server-functions/browser.ts": [
-    "/assets/browser.7020d17b.js"
+    "/assets/browser-b4a9accc.js"
   ],
-  "src/routes/(auth)/logout.tsx": [
-    "/assets/logout.97e98bec.js"
-  ],
-  "src/routes/(auth)/sign-up.tsx": [
-    "/assets/sign-up.d4e431fa.js"
-  ],
-  "src/routes/apps/hubspot.tsx": [
-    "/assets/hubspot.d746ace5.js"
+  "node_modules/solid-start/server/types.tsx": [
   ],
   "src/components/AppInstall.tsx": [
-    "/assets/AppInstall.6af89568.js"
+    "/assets/AppInstall-028c9e0d.js"
+  ],
+  "src/components/Counter.tsx": [
+    "/assets/about-4635d48b.js"
+  ],
+  "src/components/LoginButton.tsx": [
+  ],
+  "src/components/NavBar.tsx": [
+  ],
+  "src/entry-client.tsx": [
+  ],
+  "src/models/users.client.ts": [
+  ],
+  "src/root.css": [
+  ],
+  "src/root.tsx": [
+  ],
+  "src/routes/(auth)/login.tsx": [
+    "/assets/login-9409e32b.js"
+  ],
+  "src/routes/(auth)/logout.tsx": [
+    "/assets/logout-e77d43fb.js"
+  ],
+  "src/routes/(auth)/sign-up.tsx": [
+    "/assets/sign-up-16272ddd.js"
+  ],
+  "src/routes/[...404].tsx": [
+    "/assets/_...404_-2f6ae281.js"
+  ],
+  "src/routes/about.tsx": [
+    "/assets/about-4635d48b.js"
+  ],
+  "src/routes/apps/hubspot.tsx": [
+    "/assets/hubspot-1c4f50a6.js"
   ],
   "src/routes/apps/index.tsx": [
-    "/assets/index.c875ac63.js"
+    "/assets/index-47b32c20.js"
   ],
   "src/routes/apps/shopify.tsx": [
-    "/assets/shopify.60af900b.js"
+    "/assets/shopify-e06031e5.js"
   ],
   "src/routes/apps/slack.tsx": [
-    "/assets/slack.7d3ac50e.js"
+    "/assets/slack-21a30539.js"
+  ],
+  "src/routes/index.tsx": [
+    "/assets/index-161b49a9.js"
   ]
 }

@@ -4,14 +4,14 @@
     {
       "name": "vite:load-fallback",
       "result": "import { createSignal } from \"solid-js\";\n\ninterface AppInstallProps {\n  app: string;\n}\nexport default function AppInstall({ app }: AppInstallProps) {\n  return (\n    <div>\n      <h1 class=\"max-6-xs text-6xl text-sky-700 font-thin uppercase my-16\">\n        {app}\n      </h1>\n      <button class=\"w-[200px] rounded-full bg-gray-100 border-2 border-gray-300 focus:border-gray-400 active:border-gray-400 px-[2rem] py-[1rem]\">\n        Install this app\n      </button>\n    </div>\n  );\n}\n",
-      "start": 1685057954323,
-      "end": 1685057954441
+      "start": 1685058358847,
+      "end": 1685058358928
     },
     {
       "name": "solid",
       "result": "import { ssr as _$ssr } from \"solid-js/web\";\nimport { escape as _$escape } from \"solid-js/web\";\nimport { ssrHydrationKey as _$ssrHydrationKey } from \"solid-js/web\";\nconst _tmpl$ = [\"<div\", \"><h1 class=\\\"max-6-xs text-6xl text-sky-700 font-thin uppercase my-16\\\">\", \"</h1><button class=\\\"w-[200px] rounded-full bg-gray-100 border-2 border-gray-300 focus:border-gray-400 active:border-gray-400 px-[2rem] py-[1rem]\\\">Install this app</button></div>\"];\nimport \"solid-js\";\nexport default function AppInstall({\n  app\n}) {\n  return _$ssr(_tmpl$, _$ssrHydrationKey(), _$escape(app));\n}",
-      "start": 1685057954441,
-      "end": 1685057954443,
+      "start": 1685058358928,
+      "end": 1685058358930,
       "order": "pre"
     }
   ]

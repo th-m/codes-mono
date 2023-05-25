@@ -4,14 +4,14 @@
     {
       "name": "vite:load-fallback",
       "result": "import { onCleanup, useContext } from \"solid-js\";\nimport { isServer } from \"solid-js/web\";\nimport { ServerContext } from \"../ServerContext\";\n\nexport function HttpStatusCode(props: { code: number }) {\n  const context = useContext(ServerContext);\n\n  if (isServer) {\n    context!.setStatusCode(props.code);\n  }\n\n  onCleanup(() => {\n    if (isServer) {\n      context!.setStatusCode(200);\n    }\n  });\n\n  return null;\n}\n",
-      "start": 1685057954559,
-      "end": 1685057954575
+      "start": 1685058359070,
+      "end": 1685058359093
     },
     {
       "name": "solid",
       "result": "import { onCleanup, useContext } from \"solid-js\";\nimport { isServer } from \"solid-js/web\";\nimport { ServerContext } from \"../ServerContext\";\nexport function HttpStatusCode(props) {\n  const context = useContext(ServerContext);\n  if (isServer) {\n    context.setStatusCode(props.code);\n  }\n  onCleanup(() => {\n    if (isServer) {\n      context.setStatusCode(200);\n    }\n  });\n  return null;\n}",
-      "start": 1685057954575,
-      "end": 1685057954576,
+      "start": 1685058359093,
+      "end": 1685058359095,
       "order": "pre"
     }
   ]
