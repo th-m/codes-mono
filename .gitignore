@@ -44,4 +44,3 @@ apps/**/build
 apps/**/.cache
   
 .astro
-netlify.toml
