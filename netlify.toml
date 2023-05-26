@@ -1,5 +1,5 @@
 [build]
-  functions = "netlify/functions"
+  functions = "home/netlify/functions"
   publish = "netlify"
 [dev]
   port = 3000
