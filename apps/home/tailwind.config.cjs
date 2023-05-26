@@ -1,7 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const {
-  createGlobPatternsForDependencies,
-} = require('@nxtensions/astro/tailwind');
+
 const { join } = require('path');
 const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
