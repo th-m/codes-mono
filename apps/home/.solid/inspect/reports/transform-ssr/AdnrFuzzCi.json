@@ -4,14 +4,14 @@
     {
       "name": "vite:load-fallback",
       "result": "// isomorphic exports\n\nexport { Body, Head, Html } from \"./Document\";\nexport { default as Links } from \"./Links\";\nexport { default as Meta } from \"./Meta\";\nexport { default as Scripts } from \"./Scripts\";\n\n",
-      "start": 1685059172498,
-      "end": 1685059172547
+      "start": 1685060494164,
+      "end": 1685060494220
     },
     {
       "name": "solid",
       "result": "// isomorphic exports\n\nexport { Body, Head, Html } from \"./Document\";\nexport { default as Links } from \"./Links\";\nexport { default as Meta } from \"./Meta\";\nexport { default as Scripts } from \"./Scripts\";",
-      "start": 1685059172547,
-      "end": 1685059172548,
+      "start": 1685060494220,
+      "end": 1685060494223,
       "order": "pre"
     }
   ]

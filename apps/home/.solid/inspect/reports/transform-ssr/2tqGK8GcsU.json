@@ -4,14 +4,14 @@
     {
       "name": "vite:load-fallback",
       "result": "import { FETCH_EVENT } from \"../server/types\";\nimport { getRouteMatches } from \"./router\";\nimport type { APIEvent, MatchRoute, Method } from \"./types\";\n\nlet apiRoutes: MatchRoute[];\n\nexport const registerApiRoutes = (routes: MatchRoute[]) => {\n  apiRoutes = routes;\n};\n\nexport async function internalFetch(route: string, init: RequestInit, env: Env = {}, locals: Record<string, unknown> = {}) {\n  if (route.startsWith(\"http\")) {\n    return await fetch(route, init);\n  }\n\n  let url = new URL(route, \"http://internal\");\n  const request = new Request(url.href, init);\n  const handler = getRouteMatches(apiRoutes, url.pathname, request.method.toUpperCase() as Method);\n\n  if (!handler) {\n    throw new Error(`No handler found for ${request.method} ${request.url}`);\n  }\n\n  let apiEvent: APIEvent = Object.freeze({\n    request,\n    params: handler.params,\n    clientAddress: \"127.0.0.1\",\n    env,\n    locals,\n    $type: FETCH_EVENT,\n    fetch: internalFetch\n  });\n\n  const response = await handler.handler(apiEvent);\n  return response;\n}\n",
-      "start": 1685059172335,
-      "end": 1685059172527
+      "start": 1685060494004,
+      "end": 1685060494157
     },
     {
       "name": "vite:esbuild",
       "result": "import { FETCH_EVENT } from \"../server/types\";\nimport { getRouteMatches } from \"./router\";\nlet apiRoutes;\nexport const registerApiRoutes = (routes) => {\n  apiRoutes = routes;\n};\nexport async function internalFetch(route, init, env = {}, locals = {}) {\n  if (route.startsWith(\"http\")) {\n    return await fetch(route, init);\n  }\n  let url = new URL(route, \"http://internal\");\n  const request = new Request(url.href, init);\n  const handler = getRouteMatches(apiRoutes, url.pathname, request.method.toUpperCase());\n  if (!handler) {\n    throw new Error(`No handler found for ${request.method} ${request.url}`);\n  }\n  let apiEvent = Object.freeze({\n    request,\n    params: handler.params,\n    clientAddress: \"127.0.0.1\",\n    env,\n    locals,\n    $type: FETCH_EVENT,\n    fetch: internalFetch\n  });\n  const response = await handler.handler(apiEvent);\n  return response;\n}\n",
-      "start": 1685059172527,
-      "end": 1685059172560,
+      "start": 1685060494157,
+      "end": 1685060494192,
       "order": "normal"
     }
   ]

@@ -4,14 +4,14 @@
     {
       "name": "vite:load-fallback",
       "result": "import invariant from \"tiny-invariant\";\n\ninvariant(\n  process.env.TH_M_CODES_KOLLA_KEY,\n  \"SESSION_SECRET must be set in your environment variables.\"\n);\n\nexport interface ConsumerTokenRequest {\n  consumer_id: string;\n  metadata: {\n    username?: string;\n    email?: string;\n    tenant_id?: string;\n    tenant_display_name?: string;\n  };\n}\n\nexport interface ConsumerTokenResponse {\n  expiry_time: string;\n  name: string;\n  token: string;\n}\nexport const getConsumerToken = async (data: ConsumerTokenRequest) => {\n  const resp = await fetch(\n    \"https://api.getkolla.com/connect/v1/consumers:consumerToken\",\n    {\n      method: \"POST\",\n      headers: {\n        \"Content-Type\": \"application/json\",\n        Accept: \"application/json\",\n        Authorization: `Bearer ${process.env.TH_M_CODES_KOLLA_KEY}`,\n      },\n      body: JSON.stringify(data),\n    }\n  );\n  const json = await resp.json() as ConsumerTokenResponse;\n  return json;\n};\n",
-      "start": 1685059172421,
-      "end": 1685059172536
+      "start": 1685060494151,
+      "end": 1685060494201
     },
     {
       "name": "vite:esbuild",
       "result": "import invariant from \"tiny-invariant\";\ninvariant(\n  process.env.TH_M_CODES_KOLLA_KEY,\n  \"SESSION_SECRET must be set in your environment variables.\"\n);\nexport const getConsumerToken = async (data) => {\n  const resp = await fetch(\n    \"https://api.getkolla.com/connect/v1/consumers:consumerToken\",\n    {\n      method: \"POST\",\n      headers: {\n        \"Content-Type\": \"application/json\",\n        Accept: \"application/json\",\n        Authorization: `Bearer ${process.env.TH_M_CODES_KOLLA_KEY}`\n      },\n      body: JSON.stringify(data)\n    }\n  );\n  const json = await resp.json();\n  return json;\n};\n",
-      "start": 1685059172536,
-      "end": 1685059172667,
+      "start": 1685060494201,
+      "end": 1685060494213,
       "order": "normal"
     }
   ]

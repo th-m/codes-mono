@@ -8,11 +8,30 @@
     "start": "solid-start start"
   },
   "type": "module",
-
+  "overrides": {
+    "vite": "^3.2.6"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "solid-start-netlify": "^0.1.0",
+    "tailwindcss": "^3.2.4",
+    "typescript": "^4.9.4",
+    "vite": "^3.2.6"
+  },
   "dependencies": {
-
-    "solid-start": "^0.2.21"
-   
+    "@rturnq/solid-auth0": "^0.2.1",
+    "@slack/events-api": "^3.0.1",
+    "@slack/web-api": "^6.8.1",
+    "@solidjs/meta": "^0.28.2",
+    "@solidjs/router": "^0.8.2",
+    "@supabase/supabase-js": "^2.8.0",
+    "openai": "^3.1.0",
+    "solid-js": "^1.6.11",
+    "solid-start": "^0.2.21",
+    "solid-supabase": "^0.3.2",
+    "tiny-invariant": "^1.3.1",
+    "undici": "^5.15.1"
   },
   "engines": {
     "node": ">=16"

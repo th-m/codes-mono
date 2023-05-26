@@ -4,14 +4,14 @@
     {
       "name": "vite:load-fallback",
       "result": "export const fetchUser = async () => {\n    const user = await fetch(\"/api/user\", {\"credentials\":\"same-origin\"});\n    const data = await user.json();\n    return data;\n  };",
-      "start": 1685059172422,
-      "end": 1685059172536
+      "start": 1685060494151,
+      "end": 1685060494201
     },
     {
       "name": "vite:esbuild",
       "result": "export const fetchUser = async () => {\n  const user = await fetch(\"/api/user\", { \"credentials\": \"same-origin\" });\n  const data = await user.json();\n  return data;\n};\n",
-      "start": 1685059172536,
-      "end": 1685059172667,
+      "start": 1685060494201,
+      "end": 1685060494213,
       "order": "normal"
     }
   ]
