@@ -1,5 +1,5 @@
 ---
-publishDate: 2023-05-25T06:41:43.618Z
+publishDate: 2023-02-27T06:41:43.618Z
 title: th-m.codes Tech Stack
 description: Let me share the th-m.codes tech stack - Netlify, NX, SolidStart, Astro, Supabase - with you.
 excerpt: My choice wasn't about picking the "best" tools but rather choosing ones that resonate with my personal preferences and working style. Let's explore each of them in detail.
@@ -21,7 +21,7 @@ Let me share the th-m.codes tech stack - Netlify, NX, SolidStart, Astro, Supabas
 ### Build Tools: Why NX?
 Most frameworks offer an `npx init` command, so why choose a monorepo like NX? My reasons are rooted in component/tooling reusability and type safety.
 
-While working on personal and professional projects, I found that I often ended up "dogfooding" my own tooling, a process I talk about in my article [[Dogfooding Libraries with NX]]. The experience of working with `npm link` and isolated packages was painful and error-prone, at least it was for me. With NX, these workflows become simpler and more streamlined.
+While working on personal and professional projects, I found that I often ended up "dogfooding" my own tooling, a process I talk about in my article [Dogfooding Libraries with NX](dog-fooding-libs-with-nx). The experience of working with `npm link` and isolated packages was painful and error-prone, at least it was for me. With NX, these workflows become simpler and more streamlined.
 
 
 ### Servers Made Easy: Netlify
