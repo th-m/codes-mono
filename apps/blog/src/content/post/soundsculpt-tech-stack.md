@@ -24,3 +24,5 @@ tags:
 My brother [Ricky Valadez](https://rickyvaladez.com/) started tinkering with Javascript Audio API about 3 years ago, making tools to help him in his day-to-day work as a Producer at Berkly.  
 
 About a year ago he had a POC that was impressive. I didn't know the browser was capable of quality audio processing. At that time we decided to team up in order to create a product out of the tool.
+
+## ...
