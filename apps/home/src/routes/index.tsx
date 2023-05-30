@@ -37,7 +37,7 @@ export default function Home() {
       <div class="flex flex-col gap-4  justify-center">
         {projects.map((project: Project) => (
           <div class="flex flex-row justify h-72 justify-between gap-4 border-2 p-4 border-slate-600 rounded-md">
-            <div class="w-3/12 max-w-md self-center justify-self-center">
+            <div class="w-3/12 max-w-sm self-center justify-self-center">
               <img src={project.image} />
             </div>
             <div class="flex flex-col h-64 flex-start items-start w-8/12">
