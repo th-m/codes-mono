@@ -20,14 +20,14 @@ export default function Root() {
   return (
     <Html lang="en" class="m-0 h-full">
       <Head>
-        <Title>SolidStart - With TailwindCSS</Title>
+        <Title>Th-m Codes</Title>
         <Meta charset="utf-8" />
         <Meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Body class="m-0 h-full">
         <Suspense>
           <ErrorBoundary>
-            <NavBar />
+            {/* <NavBar /> */}
             <Routes>
               <FileRoutes />
             </Routes>
