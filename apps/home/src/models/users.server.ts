@@ -4,8 +4,8 @@ import invariant from "tiny-invariant";
 export type User = { id: string; email: string };
 
 // Abstract this away
-const supabaseUrl = process.env.SUPABASE_URL;
-const supabaseSecret = process.env.SUPABASE_SECRET;
+const supabaseUrl = process.env.THM_SUPABASE_URL;
+const supabaseSecret = process.env.THM_SUPABASE_SECRET;
 
 invariant(
   supabaseUrl,

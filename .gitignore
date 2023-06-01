@@ -44,3 +44,6 @@ apps/**/build
 apps/**/.cache
   
 .astro
+
+# Local Netlify folder
+.netlify
