@@ -16,13 +16,14 @@ invariant(
   'wakatimeKey must be set in your environment variables.'
 );
 
-// const wakatimeReportURL = `https://wakatime.com/api/v1/users/current/stats/last_7_days?api_key=${wakatimeKey}`;
 
 // const todaysDate = new Date();
 // const sevenDaysAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);  
 const constructIntervalTime = (date:Date) => {
-    return `${date.getFullYear()}-${date.getMonth()+1}-${date.getDate()}`
+  return `${date.getFullYear()}-${date.getMonth()+1}-${date.getDate()}`
 }
+
+// const wakatimeReportURL = `https://wakatime.com/api/v1/users/current/stats/last_7_days?api_key=${wakatimeKey}`;
 // const intervalStart = constructIntervalTime(todaysDate)
 // const intervalEnd = constructIntervalTime(todaysDate)
 // const rescueTimeReportURL = `https://www.rescuetime.com/anapi/data?key=${resuceTimeKey}&perspective=interval&restrict_kind=productivity&interval=hour&restrict_begin=${intervalStart}&restrict_end=${intervalEnd}&format=json`
