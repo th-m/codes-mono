@@ -1,12 +1,11 @@
-import { Configuration, OpenAIApi } from 'openai';
+
 import invariant from 'tiny-invariant';
 import { supabase } from '~/models/users.server';
-// handles HTTP GET requests to /api/students
-const openAIKey = process.env.OPEN_AI_KEY;
+import { APIEvent, json } from "solid-start/api";
+
 const resuceTimeKey = process.env.RESCUE_TIME_KEY;
 const wakatimeKey = process.env.WAKA_TIME_KEY;
-import { APIEvent, json } from "solid-start/api";
-invariant(openAIKey, 'openAIKey must be set in your environment variables.');
+
 invariant(
   resuceTimeKey,
   'resuceTimeKey must be set in your environment variables.'
@@ -17,23 +16,17 @@ invariant(
 );
 
 
-// const todaysDate = new Date();
-// const sevenDaysAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);  
 const constructIntervalTime = (date:Date) => {
   return `${date.getFullYear()}-${date.getMonth()+1}-${date.getDate()}`
 }
-
-// const wakatimeReportURL = `https://wakatime.com/api/v1/users/current/stats/last_7_days?api_key=${wakatimeKey}`;
-// const intervalStart = constructIntervalTime(todaysDate)
-// const intervalEnd = constructIntervalTime(todaysDate)
-// const rescueTimeReportURL = `https://www.rescuetime.com/anapi/data?key=${resuceTimeKey}&perspective=interval&restrict_kind=productivity&interval=hour&restrict_begin=${intervalStart}&restrict_end=${intervalEnd}&format=json`
-// const wakatimeReportURL = `https://wakatime.com/api/v1/users/current/summaries?api_key=${wakatimeKey}&start=${intervalStart}&end=${intervalEnd}`
 
 const getReportURLs= (dayOffset:number) => {
   const date = new Date(Date.now() - dayOffset * 24 * 60 * 60 * 1000);  
   const interval = constructIntervalTime(date)
   const rescueTimeInterval ='day'
+  // https://www.rescuetime.com/rtx/developers
   const rescueTimeReportURL = `https://www.rescuetime.com/anapi/data?key=${resuceTimeKey}&perspective=interval&restrict_kind=productivity&interval=${rescueTimeInterval}&restrict_begin=${interval}&restrict_end=${interval}&format=json`
+  // https://wakatime.com/developers
   const wakatimeReportURL = `https://wakatime.com/api/v1/users/current/summaries?api_key=${wakatimeKey}&start=${interval}&end=${interval}`
   return {
     date,
@@ -42,8 +35,6 @@ const getReportURLs= (dayOffset:number) => {
   }
 
 }
-// https://wakatime.com/api/v1/users/current/stats/last_7_days?api_key=waka_fb8378c8-4829-42b5-b3c9-2988215542b2
-
 interface RescueSummary {
   notes: string
   row_headers: ["Date",
