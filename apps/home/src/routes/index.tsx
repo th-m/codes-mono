@@ -32,8 +32,7 @@ const projects = [
 export default function Home() {
   return (
     <main class="text-center min-h-screen mx-auto text-gray-50 p-4 bg-slate-900">
-      <h1 class="max-6-xs text-6xl font-thin uppercase my-16">th-m.codes</h1>
-      {/* <ThmLogo fill="#fff" /> */}
+      <ThmLogo fill="#fff" />
       <div class="flex flex-col gap-4  justify-center">
         {projects.map((project: Project) => (
           <div class="flex flex-row justify h-72 justify-between gap-4 border-2 p-4 border-slate-600 rounded-md">
