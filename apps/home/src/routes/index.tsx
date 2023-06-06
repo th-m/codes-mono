@@ -9,7 +9,7 @@ const projects = [
   {
     title: 'SoundSculpt',
     description:
-      'My brother and I are building Soundsculpt. It is the only royalty-free music platform that uses AI to empower creators, not cut them out.',
+      'The only royalty-free music platform that uses AI to empower creators, not cut them out.',
     image: 'https://soundsculpt.app/images/ss_icon_black.svg',
     link: 'https://soundsculpt.app',
   },
@@ -32,21 +32,34 @@ const projects = [
 export default function Home() {
   return (
     <main class="text-center min-h-screen mx-auto text-gray-50 p-4 bg-slate-900">
-      <ThmLogo fill="#fff" />
-      <div class="flex flex-col gap-4  justify-center">
+      <div>
+        <div class="max-w-xl mx-auto">
+          <ThmLogo fill="#fff" />
+        </div>
+      </div>
+      <div class="@container flex flex-col gap-4 justify-center mt-6 max-w-lg mx-auto">
         {projects.map((project: Project) => (
-          <div class="flex flex-row justify h-72 justify-between gap-4 border-2 p-4 border-slate-600 rounded-md">
-            <div class="w-3/12 max-w-xs p-8 self-center justify-self-center">
-              <img src={project.image} />
+          <a
+            href={project.link}
+            target="_blank"
+            class="self-center justify-self-center p-4 m-4 rounded-md bg-slate-600 @[618px]:self-end"
+          >
+            <div class="flex flex-row justify justify-between gap-4 border-2 p-4 border-slate-600 rounded-md @[618px]:flex-row">
+              <div class="w-5/12 max-w-xs p-8 self-center justify-self-center @[618px]:w-3/12">
+                <img src={project.image} />
+              </div>
+              {/* <div class="flex flex-row justify justify-between  @[618px]:flex-row"> */}
+              <div class="w-7/12 flex flex-col items-center ">
+                <h2 class="font-bold text-left self-start text-lg py-4">
+                  {project.title}
+                </h2>
+                <p class="text-left  flex-1">
+                  {' '}
+                  {project.description}
+                </p>
+              </div>
             </div>
-            <div class="flex flex-col h-64 flex-start items-start w-8/12">
-              <h2 class="font-bold text-base text-lg py-4">{project.title}</h2>
-              <p class="text-left flex-1"> {project.description}</p>
-              <a href={project.link} target='_blank' class="self-end p-4 m-4 rounded-md bg-slate-600">
-                <button>Check it out</button>
-              </a>
-            </div>
-          </div>
+          </a>
         ))}
       </div>
     </main>

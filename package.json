@@ -12,6 +12,7 @@
     "@solidjs/meta": "^0.28.2",
     "@solidjs/router": "^0.8.2",
     "@supabase/supabase-js": "^2.22.0",
+    "@tailwindcss/container-queries": "^0.1.1",
     "limax": "^4.0.0",
     "mime": "^3.0.0",
     "openai": "^3.2.1",
