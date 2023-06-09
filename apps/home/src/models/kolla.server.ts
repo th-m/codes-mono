@@ -47,7 +47,11 @@ export const getCredentialsFetch = async(
 
   const requestOptions: RequestInit = {
     method: "POST",
-    headers: myHeaders,
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+      Authorization: `Bearer ${process.env.TH_M_CODES_KOLLA_KEY}`,
+    },
     redirect: "follow",
     body: JSON.stringify({ consumer_id }),
   };
