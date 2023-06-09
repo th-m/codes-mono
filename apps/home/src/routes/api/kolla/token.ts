@@ -7,7 +7,7 @@ export async function GET() {
 export async function POST({ request }: APIEvent) {
   const req = await request.json();
   const token = await getConsumerToken({
-    consumer_id: req.userId ?? '',
+    consumer_id: req.consumer_id ?? '',
     metadata: req?.metadata ?? {},
   });
 

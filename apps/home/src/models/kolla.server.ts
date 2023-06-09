@@ -33,11 +33,11 @@ export const getConsumerToken = async (data: ConsumerTokenRequest) => {
       body: JSON.stringify(data),
     }
   );
-  const json = await resp.json() as ConsumerTokenResponse;
-  return json;
+  const respData = await resp.json() as ConsumerTokenResponse;
+  return respData;
 };
 
-export const getCredentialsFetch = (
+export const getCredentialsFetch = async(
   token: string,
   consumer_id: string,
   connector_id: string
@@ -52,8 +52,10 @@ export const getCredentialsFetch = (
     body: JSON.stringify({ consumer_id }),
   };
 
-  return fetch(
+  const resp = await fetch(
     `https://api.getkolla.com/connect/v1/connectors/${connector_id}/linkedaccounts/-:credentials`,
     requestOptions
   );
+  const respData = await resp.json()
+  return respData
 };
