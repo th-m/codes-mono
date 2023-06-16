@@ -146,12 +146,12 @@ export function ThmLogoV3({
           fill={fil1}
           style="fill-rule:nonzero;"
         />
-        <path
+        {/* <path
          class="hover:opacity-0"
           d="M836.471,560.174L828.095,627.506L675.309,627.506L683.685,560.174L836.471,560.174Z"
           fill={fil1}
           style="fill-rule:nonzero;"
-        />
+        /> */}
         <path
          class="hover:opacity-0"
           d="M844.172,452.195L925.461,452.195L913.295,549.895L854.883,549.895L852.215,571.318L847.361,610.315L843.94,637.777L902.352,637.777L889.675,739.583L808.387,739.583L844.172,452.195ZM910.252,574.338L905.396,613.335L871.616,613.335L876.471,574.338L910.252,574.338Z"
@@ -182,14 +182,14 @@ export function ThmLogoV3({
           fill={fil1}
           style="fill-rule:nonzero;"
         />
-        <path
+        {/* <path
          class="hover:opacity-0"
           d="M960.245,452.2L951.852,519.533L1238.6,519.533L1246.99,452.2L960.245,452.2Z"
           fill={fil1}
           style="fill-rule:nonzero;"
-        />
+        /> */}
         <path
-         class="hover:opacity-0"
+        //  class="hover:opacity-0"
           d="M871.616,613.335L965.297,613.335L970.153,574.338L876.471,574.338L871.616,613.335Z"
           fill={fil2}
           style="fill-rule:nonzero;"
