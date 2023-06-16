@@ -1,4 +1,4 @@
-import ThmLogo from '~/components/th-m.logo';
+import {ThmLogoV3} from '~/components/th-m.logo';
 interface Project {
   link: string;
   title: string;
@@ -14,6 +14,12 @@ const projects = [
     link: 'https://soundsculpt.app',
   },
   {
+    title: 'Blog',
+    description: 'I take notes on stuff and publish it online',
+    image: '/images/th_m-bald.webp',
+    link: 'https://blog.th-m.codes/articles/',
+  },
+  {
     title: 'Kolla',
     description:
       'Working along side some top-dog alumni from Weave to make integrations delightful',
@@ -21,43 +27,26 @@ const projects = [
       'https://uploads-ssl.webflow.com/63cb002a99caee9711807d39/63cb002a99caee1eb1807dd0_logo-wide-orange-p-500.png',
     link: 'https://www.getkolla.com/',
   },
-  {
-    title: 'Blog',
-    description: 'I take notes on stuff and publish it online',
-    image: '/images/th_m-bald.webp',
-    link: 'https://blog.th-m.codes/articles/',
-  },
+  
 ];
 
 export default function Home() {
   return (
     <main class="text-center min-h-screen mx-auto text-gray-50 p-4 bg-slate-900">
       <div>
-        <div class="max-w-xl mx-auto">
-          <ThmLogo fill="#fff" />
+        <div class="max-w-3xl mx-auto">
+          <ThmLogoV3 fil0='none' fil1='#475569' fil2="#fff"/>
         </div>
       </div>
-      <div class="@container flex flex-col gap-4 justify-center mt-6 max-w-lg mx-auto">
+      <div class="@container flex flex-row gap-4 justify-center mt-6 max-w-3xl mx-auto flex-wrap">
         {projects.map((project: Project) => (
           <a
             href={project.link}
             target="_blank"
-            class="self-center justify-self-center p-4 m-4 rounded-md bg-slate-600 @[618px]:self-end"
+            class="p-4 m-4 rounded-md bg-slate-600 border border-slate-600 flex items-center justify-center flex-grow hover:bg-slate-900"
           >
-            <div class="flex flex-row justify justify-between gap-4 border-2 p-4 border-slate-600 rounded-md @[618px]:flex-row">
-              <div class="w-5/12 max-w-xs p-8 self-center justify-self-center @[618px]:w-3/12">
-                <img src={project.image} />
-              </div>
-              {/* <div class="flex flex-row justify justify-between  @[618px]:flex-row"> */}
-              <div class="w-7/12 flex flex-col items-center ">
-                <h2 class="font-bold text-left self-start text-lg py-4">
-                  {project.title}
-                </h2>
-                <p class="text-left  flex-1">
-                  {' '}
-                  {project.description}
-                </p>
-              </div>
+            <div class="w-52 h-52 flex items-center ">
+              <img src={project.image} />
             </div>
           </a>
         ))}

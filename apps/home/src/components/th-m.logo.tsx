@@ -1,7 +1,7 @@
 interface ThmLogoProps {
   fill: string;
 }
-export default function ThmLogo({ fill = '#233565' }: ThmLogoProps) {
+export function ThmLogoV1({ fill = '#233565' }: ThmLogoProps) {
   return (
     <svg
       version="1.0"
@@ -46,6 +46,153 @@ export default function ThmLogo({ fill = '#233565' }: ThmLogoProps) {
     68 8 79 63 27 139 17 177 -48 177 -66 0 -75 38 -47 205 l12 75 439 0 439 0
     -11 -55z m-840 -317 c-7 -17 -12 -44 -12 -60 0 -21 -31 -28 -130 -28 l-130 0
     0 60 0 60 142 0 c122 0 141 -5 130 -32z"
+        />
+      </g>
+    </svg>
+  );
+}
+interface ThmLogoV2Props {
+  fil0: string;
+  fil1: string;
+  fil2: string;
+}
+export function ThmLogoV2({
+  fil0 = 'none',
+  fil1 = '#5658FF',
+  fil2 = '#E5CA85',
+}: ThmLogoV2Props) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="23.3858in"
+      height="16.5354in"
+      version="1.1"
+      style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd;width: 100%;height:100%;"
+      viewBox="0 0 23384.98 16534.84"
+    >
+      <defs></defs>
+      <g id="Layer_x0020_1">
+        <metadata id="CorelCorpID_0Corel-Layer" />
+        <rect class="fil0" fill={fil0} width="23384.98" height="16534.84" />
+        <g id="_2437568385376">
+          <polygon
+            class="fil1"
+            fill={fil1}
+            points="6628.28,10263.09 7013.81,7166.96 5787.91,7166.96 5899.37,6271.74 9051.3,6271.74 8911.5,7166.96 8142.78,7166.96 7757.25,10263.09 "
+          />
+          <polygon
+            class="fil1"
+            fill={fil1}
+            points="11603.77,7771.39 11487.45,8706.52 9365.5,8706.52 9481.82,7771.39 "
+          />
+          <path
+            class="fil1"
+            fill={fil1}
+            d="M11710.72 6271.74l1128.98 0 -168.96 1356.9 -511.43 0 -299.83 0 -37.05 297.52 -67.42 541.61 -47.51 381.41 384.37 0 426.88 0 -176.06 1413.92 -1128.97 0 497 -3991.35zm917.75 1696.36l-67.44 541.61 -469.15 0 67.44 -541.61 469.16 0z"
+          />
+          <path
+            class="fil1"
+            fill={fil1}
+            d="M14175.47 7851.19l-300.33 2411.91 -1043.45 0 176.06 -1413.92 385.21 0 299.83 0 37.05 -297.52 67.44 -541.61 47.49 -381.41 -384.37 0 -300.67 0 168.96 -1356.9 1043.46 0 -196.67 1579.44zm-1125.46 658.53l67.44 -541.61 342.94 0 -67.44 541.61 -342.94 0z"
+          />
+          <polygon
+            class="fil1"
+            fill={fil1}
+            points="17400.41,7851.19 17400.41,7851.19 17100.08,10263.09 16056.62,10263.09 16553.62,6271.74 17597.07,6271.74 "
+          />
+          <polygon
+            class="fil1"
+            fill={fil1}
+            points="10267.67,7851.19 10267.67,7851.19 9967.33,10263.09 8923.88,10263.09 9420.87,6271.74 10464.34,6271.74 "
+          />
+          <polygon
+            class="fil1"
+            fill={fil1}
+            points="15767.69,7851.19 15767.69,7851.19 15467.36,10263.09 14423.89,10263.09 14920.9,6271.74 15964.35,6271.74 "
+          />
+          <polygon
+            class="fil1"
+            fill={fil1}
+            points="13322.79,6271.81 13206.24,7206.95 17188.73,7206.95 17305.28,6271.81 "
+          />
+          <polygon
+            class="fil2"
+            fill={fil2}
+            points="12091.88,8509.71 13392.96,8509.71 13460.4,7968.11 12159.31,7968.11 "
+          />
+        </g>
+      </g>
+    </svg>
+  );
+}
+export function ThmLogoV3({
+  fil0 = 'none',
+  fil1 = '#5658FF',
+  fil2 = '#E5CA85',
+}: ThmLogoV2Props) {
+  return (
+    <svg
+      width="100%"
+      height="100%"
+      viewBox="0 0 851 288"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+    >
+      <g transform="matrix(1,0,0,1,-417.713,-452.195)">
+        <path
+        class="hover:opacity-0"
+          d="M478.223,739.583L505.982,516.654L417.713,516.654L425.739,452.195L652.686,452.195L642.62,516.654L587.27,516.654L559.511,739.583L478.223,739.583Z"
+          fill={fil1}
+          style="fill-rule:nonzero;"
+        />
+        <path
+         class="hover:opacity-0"
+          d="M836.471,560.174L828.095,627.506L675.309,627.506L683.685,560.174L836.471,560.174Z"
+          fill={fil1}
+          style="fill-rule:nonzero;"
+        />
+        <path
+         class="hover:opacity-0"
+          d="M844.172,452.195L925.461,452.195L913.295,549.895L854.883,549.895L852.215,571.318L847.361,610.315L843.94,637.777L902.352,637.777L889.675,739.583L808.387,739.583L844.172,452.195ZM910.252,574.338L905.396,613.335L871.616,613.335L876.471,574.338L910.252,574.338Z"
+          fill={fil1}
+          style="fill-rule:nonzero;"
+        />
+        <path
+         class="hover:opacity-0"
+          d="M1021.64,565.919L1000.01,739.583L924.884,739.583L937.56,637.777L986.885,637.777L989.553,616.355L994.409,577.358L997.828,549.895L948.503,549.895L960.669,452.195L1035.8,452.195L1021.64,565.919ZM940.604,613.335L945.46,574.338L970.153,574.338L965.297,613.335L940.604,613.335Z"
+          fill={fil1}
+          style="fill-rule:nonzero;"
+        />
+        <path
+         class="hover:opacity-0"
+          d="M1253.84,565.919L1232.22,739.583L1157.09,739.583L1192.87,452.195L1268,452.195L1253.84,565.919Z"
+          fill={fil1}
+          style="fill-rule:nonzero;"
+        />
+        <path
+         class="hover:opacity-0"
+          d="M740.268,565.919L718.643,739.583L643.511,739.583L679.297,452.195L754.428,452.195L740.268,565.919Z"
+          fill={fil1}
+          style="fill-rule:nonzero;"
+        />
+        <path
+         class="hover:opacity-0"
+          d="M1136.28,565.919L1114.66,739.583L1039.53,739.583L1075.31,452.195L1150.44,452.195L1136.28,565.919Z"
+          fill={fil1}
+          style="fill-rule:nonzero;"
+        />
+        <path
+         class="hover:opacity-0"
+          d="M960.245,452.2L951.852,519.533L1238.6,519.533L1246.99,452.2L960.245,452.2Z"
+          fill={fil1}
+          style="fill-rule:nonzero;"
+        />
+        <path
+         class="hover:opacity-0"
+          d="M871.616,613.335L965.297,613.335L970.153,574.338L876.471,574.338L871.616,613.335Z"
+          fill={fil2}
+          style="fill-rule:nonzero;"
         />
       </g>
     </svg>
