@@ -12,5 +12,9 @@ export async function POST({ request }: APIEvent) {
     metadata: req?.metadata ?? {},
   });
   const headers = withCors();
-  return json(token, {headers});
+  return json(token, { headers });
+}
+export async function OPTIONS({}: APIEvent) {
+  const headers = withCors();
+  return json({ success: true }, { headers });
 }
