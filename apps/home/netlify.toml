@@ -6,3 +6,11 @@
   command = "solid-start dev"
   port = 3000
   ## more info on configuring this file: https://www.netlify.com/docs/netlify-toml-reference/
+[[headers]]
+  for = "/api/*"
+  [headers.values]
+    Access-Control-Allow-Methods = "POST,OPTIONS,GET,PUT,DELETE"
+    Access-Control-Allow-Origin = "*"
+    Access-Control-Allow-Headers = "Origin, X-Requested-With, Content-Type, Accept"
+    Access-Control-Allow-Credentials = true
+  
