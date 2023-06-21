@@ -7,7 +7,7 @@
   port = 3000
   ## more info on configuring this file: https://www.netlify.com/docs/netlify-toml-reference/
 [[headers]]
-  for = "/api/*"
+  for = "*"
   [headers.values]
     Access-Control-Allow-Methods = "POST,OPTIONS,GET,PUT,DELETE"
     Access-Control-Allow-Origin = "*"
