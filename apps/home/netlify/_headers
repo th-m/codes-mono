@@ -1,2 +1,9 @@
 /assets/*
   Cache-Control: public, immutable, max-age=31536000
+
+/api/*
+  Access-Control-Allow-Methods: POST,OPTIONS,GET,PUT,DELETE
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
+  Access-Control-Max-Age: 2592000
+  Access-Control-Allow-Credentials: true
