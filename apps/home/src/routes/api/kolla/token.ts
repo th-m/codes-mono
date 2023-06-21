@@ -1,5 +1,6 @@
 import { APIEvent, json } from 'solid-start/api';
 import { getConsumerToken } from '~/models/kolla.server';
+import { withCors } from '~/utils/server';
 
 export async function GET() {
   return new Response('Hello From Kolla');
@@ -10,6 +11,6 @@ export async function POST({ request }: APIEvent) {
     consumer_id: req.consumer_id ?? '',
     metadata: req?.metadata ?? {},
   });
-
-  return json(token);
+  const headers = withCors();
+  return json(token, {headers});
 }
