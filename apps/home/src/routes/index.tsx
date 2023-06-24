@@ -14,6 +14,12 @@ const projects = [
     link: 'https://soundsculpt.app',
   },
   {
+    title: 'Harmony Hub',
+    description: 'All productivity and app tracking softwares in one place',
+    image: '/images/logomark.png',
+    link: 'https://harmonyhub.dev/',
+  },
+  {
     title: 'Blog',
     description: 'I take notes on stuff and publish it online',
     image: '/images/th_m-bald.webp',
